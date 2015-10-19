@@ -1,0 +1,428 @@
+/* ### New Multitouch Microsite ### */
+
+html, body {
+	background-color: #F3857E;
+	color:#fff;
+	height: 100%;
+	margin:0;
+	padding:0; 
+	position:relative;
+	width: 100%;
+}
+
+#downloadicon, #ideumicon, #socialicon, #tableicon {
+	display:inline-block;
+}
+#ideumicon { /* fix the offset of the image - alternatively we could trim the original image file */
+  position:relative;
+  left:-18px;
+}
+#downloadicon img, #socialicon img, #tableicon img { /* standardize the size of the icons in header */
+ margin:0 ;
+ width:46px;
+}
+#downloadicon:hover img, #ideumicon:hover img, #socialicon:hover img, #tableicon:hover img { /* add hover state  */
+ opacity:0.5;
+}
+
+/* default values for arrow display */
+#dig_deeper, #down_arrow, #up_arrow {
+	height:59px;
+	visibility:hidden;
+}
+
+#dig_deeper.on, #down_arrow.on, #up_arrow.on {
+	visibility:visible;
+}
+
+#up_arrow:hover, #down_arrow:hover {
+	cursor:pointer;
+	opacity:0.5;
+}
+#dig_deeper p {
+	position: relative;
+  right: -1em;
+}
+
+#skip_animation {
+	position: fixed;
+	top: 10%;
+	text-align: center;
+	color: white;
+	z-index:3;
+	cursor: pointer;
+	width: 100%;
+}
+
+#svg {
+	background-color:rgb(243,112,104);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	z-index:2;
+}
+
+#Layer_1 {
+	fill:white;
+}
+
+video {
+	background-image:url("/images/background.png");
+	height:auto;
+	min-height:100%;
+	min-width:100%;
+	position:fixed;
+		top: 0; right: 0; bottom: 0; left: 0;
+	width:auto;
+	z-index:1;
+}
+
+#starting_links {
+	padding-top:20px;
+	z-index:100;
+}
+
+#content-block {
+  height:30%;
+  margin:auto;
+	padding-top:50px;
+	position:absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#content-information {
+	height:100%;
+}
+
+#utility {
+	text-align: right;
+}
+
+/* ### begin clearfix helper class ### */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+
+.clearfix { 
+	display:inline-block; 
+}
+/* start commented backslash hack for clearfix \*/
+* html .clearfix { 
+	height:1%; 
+}
+
+.clearfix { 
+	display:block; 
+}
+/* close commented backslash hack for clearfix */
+/* ### end clearfix helper class ### */
+
+#scrollnav {
+	height:183px;
+	margin:auto;
+	position: fixed;
+		top: 0; right: 0; bottom: 0; /* do not set left value */
+	text-align: right;
+}
+
+/* begin settup of fixed sections vertical offsets */
+
+#content-display {
+  height: 100%;
+  position: fixed;
+  	top: 0%;
+  width: 100%;
+}
+
+#starting_links {
+	position:fixed;
+	width:100%;
+}
+
+.text-display {
+	position:relative;
+		top:30%;
+}
+/* end settup of fixed sections vertical offsets */
+
+
+/* ### begin #tablemenu styles ### */
+#menu {
+  height: 100%;
+  position: fixed;
+}
+#tablemenu { /* aka tablemenu */
+	background-color:transparent;
+	color:#fff;
+	position:fixed;
+		top:30%;
+	transition: all 0.25s ease;
+}
+#tablemenu ul {
+	list-style:none;
+}
+/* defualt values for viewability of sub-navigation */
+#tablemenu ul li ul  {
+	display:none;
+	margin:.25em 0;
+}
+#tablemenu ul li a {
+	color:#fff;
+	text-transform:uppercase;
+}
+#tablemenu ul li.on {
+	text-decoration:underline;
+}
+#tablemenu ul li#section1navitem.on {
+	text-decoration:none;
+}
+#tablemenu ul li.on ul {
+	display:block;
+}
+#tablemenu ul li.on ul li {
+	color:#fff;
+	font-weight:normal; /*temp use only*/
+}
+#tablemenu ul {
+	margin:0;
+}
+#tablemenu ul li a.on {
+  font-family:'Lato', 'san-serif';
+  text-decoration:underline;
+  font-weight:bold;
+  font-weight:900;
+}
+
+	/* starting (section1) values for viewability of sub-navigation - show #section1navitemsub-navigation only */
+	#tablemenu.section1 ul li#section1navitem ul  {
+		display:block !important;
+	}
+	#tablemenu.section1 ul li#section2navitem ul  {
+		display:none;
+	}
+	#tablemenu.section1 ul li#section3navitem ul  {
+		display:none;
+	}
+	#tablemenu ul li.on ul li:first-child {
+    border-top:2px solid #fff;
+		margin:0;
+		padding-top:.25em;
+	}
+	#tablemenu ul li.on ul li:last-child {
+    border-bottom:2px solid #fff;
+		margin-bottom:.25em;
+		padding-top:.5em;
+	}
+	#tablemenu ul li ul li a.on {
+	  font-family: 'Lato', san-serif;
+	  font-weight:900;
+	}
+	#tablemenu ul li ul li a {
+	  padding-left:20px;
+	  position: relative;
+    	top: 2px;
+	}
+	#tablemenu ul li ul li.on:before {
+    content:">";
+    float:left;
+	}
+
+	#section1navitem.on {
+		margin-bottom:0;
+	}
+	#section1navitem2 {
+	  
+	}
+	#section1navitem3 {
+		/* nothing to see here */
+	}
+	
+	/* section2 values for viewability of sub-navigation - show #section2navitem sub-navigation only */
+	#tablemenu ul li ul {
+    list-style:none;
+	}
+	.nav ul li ul {
+    margin-left:0;
+    font-size:.95em;
+	}
+	.nav ul li ul li:first-child a {
+    display:block;
+    padding:0;
+	}
+	.nav ul li ul li:last-child  a{
+    display:block;
+    padding:0 0 .5em 0;
+	}
+	.nav a {
+    text-decoration:none;
+	}
+	.nav a:hover {
+    text-decoration:underline;
+	}
+
+	#content-scroller section .text-display {
+		left: 4000px;
+	}
+
+	#tablemenu.section2 ul li#section1navitem ul  {
+		display:none;
+	}
+	#tablemenu.section2 ul li#section2navitem ul  {
+		display:block;
+	}
+	#tablemenu.section2 ul li#section3navitem ul {
+		display:none;
+	}
+
+	/* section3 values for viewability of sub-navigation - show #section3navitem sub-navigation only */
+	#tablemenu.past-section3 ul li#section1navitem ul  {
+		display:none;
+	}
+	#tablemenu.section3 ul li#section2navitem ul  {
+		display:none;
+	}
+	#tablemenu.section3 ul li#section3navitem ul {
+		display:block;
+	}
+/* ### end menu styles ### */
+
+#section1, #section2, #section3  {
+	background-image:none;
+	background-size:cover;
+	height:100vh;
+	transition:background 0.5s linear;
+}
+#section1 {
+	background-image:url('/images/background.png');
+	position:inherit;
+}
+#section2 {
+	background-image:url('/images/background.png');
+	position:inherit;
+}
+#section3 {
+	background-image:url('/images/background.png');
+	position:inherit;
+}
+
+#table {
+	background-image:url('/images/table-content/table.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:100%;
+}
+#table #text-block {
+  display:block;
+  font-family:'Lato', 'san-serif';
+  font-size:2.3vh;
+  font-weight:lighter;
+  font-weight:300;
+  line-height:;
+  margin:0 auto;
+  max-width:52%;
+	padding:0;
+	position: absolute;
+    top:18.5%; right:2%; left:2%;
+  text-align:center;
+}
+#latest-in-touch {
+	background-image:url('/images/table-content/latest-in-touch.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:100%;
+}
+#key-features {
+	background-image:url('/images/table-content/key-features.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:100%;
+}
+#latest-in-touch {
+	display:none;
+}
+#key-features {
+	display:none;
+}
+#gallery {
+	height:100%;
+	display:none;
+}
+#contact {
+	display:none;
+}
+
+
+#gallery .one-fourth {
+	float:left;
+	height:100%;
+	overflow:hidden;
+}
+.one-fourth a.touchme {
+	background-image:url('/images/clickme.png');
+  background-position-x: center;
+  background-position-y: center;
+	background-repeat:no-repeat;
+  height:100%;
+  visibility:hidden;
+	width:100%;
+}
+
+#fish-n-ships {
+	background-image:url('/images/gallery/fish-n-ships.jpg');
+	background-size:cover;
+	background-position:center;
+	width:25%;
+}
+#welding {
+	background-image:url('/images/gallery/welding.jpg');
+	background-size:cover;
+	background-position:center;
+	width:25%;
+}
+#gestures{
+	background-image:url('/images/gallery/gestures.jpg');
+	background-size:cover;
+	background-position:center;
+	width:25%;
+}
+#bugged {
+	background-image:url('/images/gallery/bugged.jpg');
+	background-size:cover;
+	background-position:center;
+	width:25%;
+}
+
+.one-fourth {
+	position:relative;
+}
+.one-fourth img {
+	display:none;
+	position:relative;
+}
+
+.v-center-container {
+    position:absolute; 
+    height:100%; 
+    width:100%;
+    display: table;
+}
+.v-center-element {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
