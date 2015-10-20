@@ -387,6 +387,10 @@ video {
 	left: 40%;
 }
 
+#inquiry, #sales {
+	cursor: pointer;
+}
+
 #gallery .one-fourth {
 	float:left;
 	height:100%;
