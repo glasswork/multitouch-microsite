@@ -94,6 +94,23 @@
 </video>
 -->
 
+<div class="header-mobile">
+	<input type="checkbox" id="toggle" />
+	<div>
+		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
+		<ul class="menu-mobile">
+			<li id="section1navitem" class="on"><a id="section1navitem1" href="#section1">The Multitouch Table</a>
+				<ul>
+					<li id="section1-navitem1"><a href="#" id="section1navitem2">LATEST IN TOUCH</a></li>
+					<li id="section1-navitem2"><a href="#" id="section1navitem3">KEY FEATURES</a></li>
+				</ul>
+			</li>	
+			<li id="section2navitem"><a href="#section2">Gallery</a></li>
+			<li id="section3navitem"><a href="#section3">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
 <div class="row" id="starting_links">
 
 	<div class="three columns left-side" id="logo">

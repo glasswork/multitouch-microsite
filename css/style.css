@@ -18,11 +18,11 @@ html, body {
   left:-18px;
 }
 #downloadicon img, #socialicon img, #tableicon img { /* standardize the size of the icons in header */
- margin:0 ;
- width:46px;
+	margin:0 ;
+	width:46px;
 }
 #downloadicon:hover img, #ideumicon:hover img, #socialicon:hover img, #tableicon:hover img { /* add hover state  */
- opacity:0.5;
+	opacity:0.5;
 }
 
 /* default values for arrow display */
@@ -39,9 +39,10 @@ html, body {
 	cursor:pointer;
 	opacity:0.5;
 }
+
 #dig_deeper p {
 	position: relative;
-  right: -1em;
+  	right: -1em;
 }
 
 #skip_animation {
@@ -144,7 +145,6 @@ video {
 
 #scrollnav .up-down-arrows div img {
 	max-width:46px;
-
 }
 
 /* begin settup of fixed sections vertical offsets */
@@ -439,14 +439,13 @@ video {
 }
 
 .v-center-container {
-    position:absolute; 
-    height:100%; 
-    width:100%;
-    display: table;
+  display:table;
+  height:100%; 
+  position:absolute; 
+  width:100%;
 }
 .v-center-element {
-    display: table-cell;
-    vertical-align: middle;
-    text-align:center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
 }
-
