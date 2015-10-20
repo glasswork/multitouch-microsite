@@ -382,22 +382,30 @@ video {
 }
 #contact {
 	display:none;
-	position: fixed;
-	top: 30%;
-	left: 40%;
+	position:relative;
+	top: 40%;
 }
 
 #contact h1 {
 	font-size:3.5vmax;
-	text-align:center;
+	word-spacing:.5vmax;
+	text-align:center
 }
 #contact p {
 	line-height:3.5vmin;
+	margin-bottom:1vmin;
 }
 #contact p.contact-element img {
 	float:left;
 	height: 3.5vmin;
 	margin-right:2vw;
+}
+#contact table#contact-table {
+	margin:2vmax auto 2em auto;
+}
+#contact table#contact-table td {
+	border-bottom: 0px solid #E1E1E1;
+	padding: 6px 15px;
 }
 
 #inquiry, #sales {

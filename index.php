@@ -99,14 +99,14 @@
 	<div>
 		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
 		<ul class="menu-mobile">
-			<li id="section1navitem" class="on"><a id="section1navitem1" href="#section1">The Multitouch Table</a>
+			<li class="on"><a  href="#section1">The Multitouch Table</a>
 				<ul>
-					<li id="section1-navitem1"><a href="#" id="section1navitem2">LATEST IN TOUCH</a></li>
-					<li id="section1-navitem2"><a href="#" id="section1navitem3">KEY FEATURES</a></li>
+					<li><a href="#latest-in-touch">LATEST IN TOUCH</a></li>
+					<li><a href="#key-features">KEY FEATURES</a></li>
 				</ul>
 			</li>	
-			<li id="section2navitem"><a href="#section2">Gallery</a></li>
-			<li id="section3navitem"><a href="#section3">Contact</a></li>
+			<li><a href="#section2">Gallery</a></li>
+			<li><a href="#section3">Contact</a></li>
 		</ul>
 	</div>
 </div>
@@ -201,14 +201,51 @@
 		</div>
 
 		<div id="contact" class="row">
-			<h1>Ready to start?</h1>
-			<p class="contact-element">
-				<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>(505) 702-1110 ext.1
-			</p>
-			<img id="us_can_phone_nmbr" src="images/us_can.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(855) 898-6824</br>
-			<img id="inquiry" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online inquiry form</br>
-			<img id="sales" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sales@ideum.com</br></br>
-			<p style="text-align: center;">Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.</p>
+
+			<div class="seven columns offset-by-three">
+
+				<h1>Ready to start?</h1>
+
+				<table id="contact-table">
+					<tr class="contact-element">
+						<td class="icon-column">
+							<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
+						</td>
+						<td class="datan-column">
+							(505) 702-1110 ext.1
+						</td>
+					</tr>
+					<tr class="contact-element">
+						<td class="icon-column">
+							<img id="us_can_phone_nmbr" src="images/us_can.png"/>
+						</td>
+						<td class="datan-column">
+							(855) 898-6824
+						</td>
+					</tr>
+					<tr class="contact-element">
+						<td class="icon-column">
+							<img id="inquiry" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+						</td>
+						<td class="datan-column">
+							online inquiry form
+						</td>
+					</tr>
+					<tr class="contact-element">
+						<td class="icon-column">
+							<img id="sales" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+						</td>
+						<td class="datan-column">
+							sales@ideum.com
+						</td>
+					</tr>
+				</table>
+
+				<p style="text-align: center;">
+					Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
+				</p>
+				</div>
+
 		</div>
 
 	</div>
