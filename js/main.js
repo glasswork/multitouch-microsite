@@ -341,15 +341,6 @@ $(document).ready(function($) {
 
     });
 
-  // function for email and spec sheet link on contact page
-  $('#inquiry').click(function() {
-    window.open('http://ideum.com/contact');
-  });
-
-  $('#sales').click(function() {
-    window.location.href = 'mailto:sales@ideum.com';
-  });
-
   $win.on("scroll", function () { // on scroll do this
     //console.log($(this).scrollTop());
 
