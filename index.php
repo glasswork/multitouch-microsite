@@ -201,8 +201,10 @@
 		</div>
 
 		<div id="contact" class="row">
-			<p style="font-size: 40px; text-align: center;">Ready to start?</p>				
-			<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(505) 702-1110 ext.1</br>
+			<h1>Ready to start?</h1>
+			<p class="contact-element">
+				<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>(505) 702-1110 ext.1
+			</p>
 			<img id="us_can_phone_nmbr" src="images/us_can.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(855) 898-6824</br>
 			<img id="inquiry" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online inquiry form</br>
 			<img id="sales" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sales@ideum.com</br></br>

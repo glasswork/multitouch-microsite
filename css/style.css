@@ -387,6 +387,19 @@ video {
 	left: 40%;
 }
 
+#contact h1 {
+	font-size:3.5vmax;
+	text-align:center;
+}
+#contact p {
+	line-height:3.5vmin;
+}
+#contact p.contact-element img {
+	float:left;
+	height: 3.5vmin;
+	margin-right:2vw;
+}
+
 #inquiry, #sales {
 	cursor: pointer;
 }
