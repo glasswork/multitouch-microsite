@@ -96,17 +96,17 @@
 
 <div class="row" id="starting_links">
 
-	<div class="two columns left-side" id="logo">
+	<div class="three columns left-side" id="logo">
 
-		<a id="ideumicon" href="http://ideum.com" target="_blank">
+		<a id="ideumicon" href="/" target="_blank">
 			<img src="images/ideum_logo.png">
 		</a>
 
 	</div>
 
-	<div class="eight columns">&nbsp;<!-- nothing to see here - placeholder -->&nbsp;</div>
+	<div class="six columns">&nbsp;<!-- nothing to see here - placeholder -->&nbsp;</div>
 	
-	<div class="two columns right-side" id="utility">
+	<div class="three columns right-side" id="utility">
 
 		<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
 			<img src="images/download.png" height="64px" width="64px">
@@ -124,7 +124,7 @@
 
 <div class="row" id="content-display">
 
-	<div class="two columns left-side" id="menu">
+	<div class="three columns left-side" id="menu">
 		
 		<nav id="tablemenu" class="nav">
 			<ul>
@@ -140,7 +140,7 @@
 		</nav>
 	</div>
 
-	<div class="eight columns offset-by-two" id="content-information">
+	<div class="six columns offset-by-three" id="content-information">
 
 		<div id="table">
 
@@ -161,31 +161,37 @@
 		<div id="gallery" class="row">
 			<div class="one-fourth" id="fish-n-ships">
 				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="/images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
 					<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
 					<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
 				</div>
 			</div>
 			<div class="one-fourth" id="welding">
 				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="/images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
 				</div>
 			</div>
 			<div class="one-fourth" id="gestures">
 				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="/images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
 				</div>
 			</div>
 			<div class="one-fourth" id="bugged">
 				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="/images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
 				</div>
 			</div>
 		</div>
 
+		<div id="contact" class="row">
+
+			Contact stuff here
+
+		</div>
+
 	</div>
 
-	<div class="two columns right-side" id="scrollnav">
+	<div class="three columns right-side" id="scrollnav">
 
 		<div class="up-down-arrows">
 			<div id="up_arrow">
@@ -208,16 +214,20 @@
 	<a class="anchorlink" name="section1"></a>
 	<section class="one-column" id="section1">
 
-		<div id="content-display-1" class="text-display">
-			This section 1 content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
+		<div id="table-mobile">
+
+			<div id="text-block-mobile">
+				The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
+			</div>
+
 		</div>
 
-		<div id="content-display-1a" class="text-display">
-			This section 1a content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
+		<div id="latest-in-touch-mobile">
+
 		</div>
 
-		<div id="content-display-1b" class="text-display">
-			This section 1b content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
+		<div id="key-features">
+
 		</div>
 
 	</section>
@@ -225,8 +235,29 @@
 	<a class="anchorlink" name="section2"></a>
 	<section  class="one-column" id="section2">
 
-		<div id="content-display-2" class="text-display">
-			This Gallery (section2) content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
+		<div id="gallery-mobile" class="row">
+			<div class="one-fourth" id="fish-n-ships">
+				<div class="v-center-container">
+					<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
+					<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
+				</div>
+			</div>
+			<div class="one-fourth" id="welding">
+				<div class="v-center-container">
+					<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
+				</div>
+			</div>
+			<div class="one-fourth" id="gestures">
+				<div class="v-center-container">
+					<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
+				</div>
+			</div>
+			<div class="one-fourth" id="bugged">
+				<div class="v-center-container">
+					<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
+				</div>
+			</div>
 		</div>
 
 	</section>
@@ -234,7 +265,7 @@
 	<a class="anchorlink" name="section3"></a>
 	<section class="one-column" id="section3">
 
-		<div id="content-display-3" class="text-display">
+		<div id="contact-mobile" class="row">
 			This Contact (section 3) content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
 		</div>
 
