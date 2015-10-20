@@ -206,7 +206,7 @@
 
 				<h1>Ready to start?</h1>
 
-				<table id="contact-table">
+								<table id="contact-table">
 					<tr class="contact-element">
 						<td class="icon-column">
 							<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
@@ -225,7 +225,9 @@
 					</tr>
 					<tr class="contact-element">
 						<td class="icon-column">
-							<img id="inquiry" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+							<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
+								<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+							</a>
 						</td>
 						<td class="datan-column">
 							online inquiry form
@@ -233,7 +235,9 @@
 					</tr>
 					<tr class="contact-element">
 						<td class="icon-column">
-							<img id="sales" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+							<a id="sales" href="mailto:sales@ideum.com" target="_blank">
+								<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+							</a>
 						</td>
 						<td class="datan-column">
 							sales@ideum.com
