@@ -382,8 +382,10 @@ video {
 }
 #contact {
 	display:none;
+	position: fixed;
+	top: 30%;
+	left: 40%;
 }
-
 
 #gallery .one-fourth {
 	float:left;
