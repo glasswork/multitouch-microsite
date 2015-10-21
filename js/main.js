@@ -121,6 +121,8 @@ $(document).ready(function($) {
       $('#section1navitem').addClass('on');
       $('#section1-navitem1').removeClass('on');
       $('#section1-navitem2').removeClass('on');
+      $('#section1navitem2').removeClass('on');
+      $('#section1navitem3').removeClass('on');
 
       $('#up_arrow').removeClass('on');
       $('#up_arrow').removeClass('goto1');
@@ -303,6 +305,7 @@ $(document).ready(function($) {
 
       $('#up_arrow').removeClass('on');
       $('#down_arrow').removeClass('on');
+      
       $('#dig_deeper').removeClass('on');
 
       document.getElementById("table").style.display="none";
@@ -329,6 +332,7 @@ $(document).ready(function($) {
 
       $('#up_arrow').removeClass('on');
       $('#down_arrow').removeClass('on');
+
       $('#dig_deeper').removeClass('on');
 
       //document.getElementById("contact").innerHTML = $contactContent;
@@ -360,6 +364,7 @@ $(document).ready(function($) {
 
       $('#up_arrow').removeClass('on');
       $('#down_arrow').removeClass('on');
+
       $('#dig_deeper').removeClass('on');
 
       //document.getElementById("content-information").innerHTML = $galleryContent;
@@ -388,6 +393,7 @@ $(document).ready(function($) {
 
       $('#up_arrow').removeClass('on');
       $('#down_arrow').removeClass('on');
+
       $('#dig_deeper').removeClass('on');
 
       //document.getElementById("content-information").innerHTML = $contactContent;
@@ -413,8 +419,6 @@ $(document).ready(function($) {
       $('#tablemenu').removeClass('section3');
       $('#section3').removeClass('section3');
       $('#section3navitem').removeClass('on');
-
-      $('#section1navitem').addClass('on');
 
       $('#up_arrow').removeClass('on');
       $('#up_arrow').removeClass('goto1');
