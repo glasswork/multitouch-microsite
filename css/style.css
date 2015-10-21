@@ -393,12 +393,17 @@ video {
 }
 #contact p {
 	line-height:3.5vmin;
-	margin-bottom:1vmin;
 }
-#contact p.contact-element img {
-	float:left;
-	height: 3.5vmin;
-	margin-right:2vw;
+#contact p a {
+	color:#fff;
+	text-decoration:underline;
+}
+#contact-table .text-column a{
+	color:#fff;
+	text-decoration:none;
+}
+#contact-table .text-column a:hover {
+	text-decoration:underline;
 }
 #contact table#contact-table {
 	margin:2vmax auto 2em auto;
