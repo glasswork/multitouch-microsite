@@ -115,7 +115,7 @@
 
 	<div class="three columns left-side" id="logo">
 
-		<a id="ideumicon" href="/" target="_blank">
+		<a id="ideumicon" href="http://ideum.com/" target="_blank">
 			<img src="images/ideum_logo.png">
 		</a>
 
