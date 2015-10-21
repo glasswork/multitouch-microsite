@@ -125,7 +125,7 @@
 	
 	<div class="three columns right-side" id="utility">
 
-		<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
+		<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf" target="_blank">
 			<img src="images/download.png" height="64px" width="64px">
 		</a>
 		<a id="socialicon" href="#">
