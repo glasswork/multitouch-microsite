@@ -11,18 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css"/>
-	<link rel="stylesheet" href="css/colorbox.css" />
+	<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+	<link rel="stylesheet" href="navigation-responsive.css" />
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:3900,700,400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300' rel='stylesheet' type='text/css'>
 
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
 
 	<script src="snap.svg.js"></script>
 	<script src="js/svg-n-movie.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/jquery.colorbox.js"></script>
+	<script src="js/navigation-toggle.js"></script>
 
 	<script>
 		$(document).ready(function(){
@@ -36,6 +37,7 @@
 			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 			$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
 			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+			$(".share").colorbox({iframe:true, width:"400", height:"300"});
 			$(".inline").colorbox({inline:true, width:"50%"});
 			$(".callbacks").colorbox({
 				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
@@ -59,282 +61,484 @@
 </head>
 
 <body>
-<!-- this will be mobile menu -->
-<!--
-<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#tablemenu-mobile">
-	<a id="ideumicon-mobile" href="http://ideum.com" target="_blank">
-		<img src="images/ideum_logo.png" style="float:right;max-height:40px;">
-	</a>
-	<span>Menu</span>
-</div>
-<nav id="tablemenu-mobile">
-	<ul>
-		<li id="section1navitem" class="on"><a id="section1navitem1" href="#section1">The Multitouch Table</a>
-			<ul>
-				<li><a href="#" id="section1navitem2">LATEST IN TOUCH</a></li>
-				<li><a href="#" id="section1navitem3">KEY FEATURES</a></li>
-			</ul>
-		</li>	
-		<li id="section2navitem"><a href="#section2">Gallery</a></li>
-		<li id="section3navitem"><a href="#section3">Contact</a></li>
-	</ul>
-</nav>
- -->
- 
-<!--
-<div class="skip_animation">
-	<a id="skip_animation">Skip Animation</a>
-</div>
 
-<div class="svg_animation">
-	<svg id="svg"></svg>
-</div>
+<div id="desktop-n-tablet">
 
-<video id="video">
-</video>
--->
-
-<div class="header-mobile">
-	<input type="checkbox" id="toggle" />
-	<div>
-		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
-		<ul class="menu-mobile">
-			<li class="on"><a  href="#section1">The Multitouch Table</a>
-				<ul>
-					<li><a href="#latest-in-touch">LATEST IN TOUCH</a></li>
-					<li><a href="#key-features">KEY FEATURES</a></li>
-				</ul>
-			</li>	
-			<li><a href="#section2">Gallery</a></li>
-			<li><a href="#section3">Contact</a></li>
-		</ul>
+	<!--
+	<div class="skip_animation">
+		<a id="skip_animation">Skip Animation</a>
 	</div>
-</div>
 
-<div class="row" id="starting_links">
+	<div class="svg_animation">
+		<svg id="svg"></svg>
+	</div>
 
-	<div class="three columns left-side" id="logo">
+	<video id="video">
+	</video>
+	-->
 
-		<a id="ideumicon" href="/" target="_blank">
+	<div class="row" id="starting_links">
+
+		<div class="three columns left-side" id="logo">
+
+			<a id="ideumicon" href="/" target="_blank">
+				<img src="images/ideum_logo.png">
+			</a>
+
+		</div>
+
+		<div class="six columns">&nbsp;<!-- nothing to see here - placeholder -->&nbsp;</div>
+		
+		<div class="three columns right-side" id="utility">
+
+			<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
+				<img src="images/download.png" height="64px" width="64px">
+			</a>
+			<a id="socialicon" class="share" href="share.html">
+				<img src="images/share_this.png">
+			</a>
+			<a id="tableicon" href="http://ideum.com/touch-tables/platform/" target="_blank">
+				<img src="images/table_icon.png">
+			</a>
+
+		</div>
+		
+	</div>
+
+	<div class="row" id="content-display">
+
+		<div class="three columns left-side" id="menu">
+			
+			<nav id="tablemenu" class="nav">
+				<ul>
+					<li id="section1navitem" class="on"><a id="section1navitem1" href="#section1">The Multitouch Table</a>
+						<ul>
+							<li id="section1-navitem1"><a href="#" id="section1navitem2">LATEST IN TOUCH</a></li>
+							<li id="section1-navitem2"><a href="#" id="section1navitem3">KEY FEATURES</a></li>
+						</ul>
+					</li>	
+					<li id="section2navitem"><a href="#section2">Gallery</a></li>
+					<li id="section3navitem"><a href="#section3">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="six columns offset-by-three" id="content-information">
+
+			<div id="table">
+
+				<div id="text-block">
+					The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
+				</div>
+
+			</div>
+
+			<div id="latest-in-touch">
+
+			</div>
+
+			<div id="key-features">
+
+			</div>
+
+			<div id="gallery" class="row">
+				<div class="one-fourth" id="fish-n-ships">
+					<div class="v-center-container">
+						<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
+					</div>
+				</div>
+				<div class="one-fourth" id="welding">
+					<div class="v-center-container">
+						<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
+					</div>
+				</div>
+				<div class="one-fourth" id="gestures">
+					<div class="v-center-container">
+						<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
+					</div>
+				</div>
+				<div class="one-fourth" id="bugged">
+					<div class="v-center-container">
+						<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact" class="row">
+
+				<div>
+
+					<h1>Ready to start?</h1>
+
+					<table id="contact-table">
+						<tr class="contact-element">
+							<td class="icon-column">
+								<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
+							</td>
+							<td class="datan-column">
+								(505) 702-1110 ext.1
+							</td>
+						</tr>
+						<tr class="contact-element">
+							<td class="icon-column">
+								<img id="us_can_phone_nmbr" src="images/us_can.png"/>
+							</td>
+							<td class="datan-column">
+								(855) 898-6824
+							</td>
+						</tr>
+						<tr class="contact-element">
+							<td class="icon-column">
+								<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
+									<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+								</a>
+							</td>
+							<td class="text-column">
+								<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
+							</td>
+						</tr>
+						<tr class="contact-element">
+							<td class="icon-column">
+								<a id="sales" href="mailto:sales@ideum.com" target="_blank">
+									<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+								</a>
+							</td>
+							<td class="text-column">
+								<a id="sales" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
+							</td>
+						</tr>
+					</table>
+
+					<p style="text-align: center;">
+						Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
+					</p>
+
+				</div>
+
+			</div><!-- /#contact .row -->
+
+		</div><!-- /#content-information .six .columns .offset-by-three -->
+
+		<div class="three columns right-side" id="scrollnav">
+
+			<div class="up-down-arrows">
+
+				<div id="up_arrow">
+					<img src="images/up_arrow.png">
+				</div>
+
+				<div id="down_arrow" class="on goto1a">
+					<img src="images/down_arrow.png">
+				</div>
+
+				<div id="dig_deeper" class="on">
+					<p>DIG DEEPER</p>
+				</div>
+
+			</div><!-- /.up-down-arrows -->
+
+		</div><!-- /#scrollnav .three .columns -->
+
+	</div><!-- /#content-display .row -->
+
+	<section class="row" id="content-scroller">
+
+		<a class="anchorlink" name="section1"></a>
+		<section class="one-column" id="section1">
+
+			<!-- placeholder for scroll - maybe delete later -->
+
+		</section><!-- /#section1 -->
+
+		<a class="anchorlink" name="section2"></a>
+		<section  class="one-column" id="section2"><!-- the images and captions will be changing - these are placeholdrers -->
+
+			<!-- placeholder for scroll - maybe delete later -->
+
+		</section><!-- /#section2 -->
+
+		<a class="anchorlink" name="section3"></a>
+		<section class="one-column" id="section3">
+
+			<!-- placeholder for scroll - maybe delete later -->
+
+		</section><!-- /#section3 -->
+
+	</section>
+
+</div><!-- end desktop-n-tablet -->
+
+<div id="mobile">
+
+	<!-- this will be mobile menu -->
+	<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#tablemenu-mobile">
+		<a id="ideumicon-mobile" href="http://ideum.com" target="_blank">
 			<img src="images/ideum_logo.png">
 		</a>
-
+		<span>Menu</span>
 	</div>
+	<nav id="tablemenu-mobile">
+		<ul>
+			<li class="on"><a href="#mobile-intro">The Multitouch Table</a>
+				<ul>
+					<li><a href="#mobile-latest-in-touch">LATEST IN TOUCH</a></li>
+					<li><a href="#mobile-key-features">KEY FEATURES</a></li>
+				</ul>
+			</li>	
+			<li><a href="#mobile-gallery">Gallery</a></li>
+			<li><a href="#mobile-contact">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- end mobile menu -->
 
-	<div class="six columns">&nbsp;<!-- nothing to see here - placeholder -->&nbsp;</div>
 	
-	<div class="three columns right-side" id="utility">
+	<a name="mobile-intro"></a>
+	<section id="mobile-table-intro">
 
-		<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
-			<img src="images/download.png" height="64px" width="64px">
-		</a>
-		<a id="socialicon" href="#">
-			<img src="images/share_this.png">
-		</a>
-		<a id="tableicon" href="http://ideum.com/touch-tables/platform/" target="_blank">
-			<img src="images/table_icon.png">
-		</a>
+		<p class="mobile-title">
+			Touch the world with the <br>PLATFORM 55 4K P-CAP <br>MULTITOUCH TABLE
+		</p>
 
-	</div>
-	
-</div>
+		<img src="images/table-content/table-mobile2.png" alt="The PLATFORM 55 4K P-CAP MULTITOUCH TABLE">
 
-<div class="row" id="content-display">
+	</section>
 
-	<div class="three columns left-side" id="menu">
+	<section id="mobile-table-description">
+
+		<p>
+			The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
+		</p>
+
+	</section><!-- /#mobile-table-intro -->
+
+	<a name="mobile-latest-in-touch"></a>
+	<section id="mobile-table-latest-in-touch">
+
+		<header class="section-header">
+			<div>
+				<h2>
+					The Latest<br>in Touch
+				</h2>
+			</div>
+		</header>
+
+		<div class="item-group-wrap">	
+
+			<div class="item-group">
+
+				<h3>
+					Capacitive Touch
+				</h3>
+
+				<div class="item-element">
+					High-performance 3M™<br>projected capacitive touch
+				</div>
+
+				<div class="item-element">
+					50+ touch points<br>with palm rejection
+				</div>
+
+			</div><!-- /.item-group -->
+
+			<div class="item-group">
+
+				<h3>
+					UHD 4K Display
+				</h3>
+
+				<div class="item-element">
+					Ultra high-resolution 4K display
+				</div>
+
+				<div class="item-element">
+					A new standard for<br>immersive interaction
+				</div>
+
+				<div class="item-element">
+					Active 3D LED display
+				</div>
+
+			</div><!-- /.item-group -->
+
+			<div class="item-group">
+
+				<h3>
+					Rugged Design
+				</h3>
+
+				<div class="item-element">
+					Constructed with<br>aircraft-grade aluminum
+				</div>
+
+				<div class="item-element">
+					Fully integrated<br>turnkey solution
+				</div>
+
+				<div class="item-element">
+					Single push button operation
+				</div>
+
+			</div><!-- /.item-group -->
+
+		</div><!-- /.item-group-warp -->
+
+
+	</section><!-- /#mobile-table-latest-in-touch -->
+
+	<a name="mobile-key-features"></a>
+	<section id="mobile-table-key-features" style="background-color:#F3857E;color:#fff;">
+
+		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
+			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Key Features</h2></div>
+		</header>
+
+		<div class="item-group-wrap" style="padding:1em 0;">	
+
+			<div class="item-group" style="border-bottom:3px solid #ebb7b4;margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+
+				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+					Stay Connected
+				</h3>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Ethernet
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					WiFi
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Bluetooth
+				</div>
+
+			</div><!-- /.item-group -->
+
+			<div class="item-group" style="border-bottom:3px solid #ebb7b4;margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+
+				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+					Windows 8 &amp; Beyond
+				</h3>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Windows 10 64-bit Professional installed
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Intel<sup>&reg;</sup> i7 Quad Core Processor
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Solid-State Drive
+				</div>
+
+			</div><!-- /.item-group -->
+
+			<div class="item-group" style="margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+
+				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+					Intelligent Design
+				</h3>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Lifetime license for<br>GestureWorks Core
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+					Timely support and<br>upgrades for life
+				</div>
+
+				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;">
+					Solid-State Drive
+				</div>
+
+			</div><!-- /.item-group -->
+
+		</div><!-- /.item-group-warp -->
+
+
+	</section><!-- /#mobile-table-lkey-features -->
+
+
+	<a name="mobile-gallery"></a>
+	<section id="mobile-gallerry" style="background-color:#303030;color:#fff;">
+
+		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
+			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Gallery</h2></div>
+		</header>
 		
-		<nav id="tablemenu" class="nav">
-			<ul>
-				<li id="section1navitem" class="on"><a id="section1navitem1" href="#section1">The Multitouch Table</a>
-					<ul>
-						<li id="section1-navitem1"><a href="#" id="section1navitem2">LATEST IN TOUCH</a></li>
-						<li id="section1-navitem2"><a href="#" id="section1navitem3">KEY FEATURES</a></li>
-					</ul>
-				</li>	
-				<li id="section2navitem"><a href="#section2">Gallery</a></li>
-				<li id="section3navitem"><a href="#section3">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
+		<div class="gallery-item-group">
 
-	<div class="six columns offset-by-three" id="content-information">
+			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">The Table in Action</a>
 
-		<div id="table">
+			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Manufacturing</a>
 
-			<div id="text-block">
-				The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
-			</div>
+			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Project X</a>
 
-		</div>
+			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Project Y</a>
 
-		<div id="latest-in-touch">
+		</div><!-- /.gallery-item-group -->
 
-		</div>
 
-		<div id="key-features">
+	</section><!-- /#mobile-table-latest-in-touch -->
 
-		</div>
 
-		<div id="gallery" class="row">
-			<div class="one-fourth" id="fish-n-ships">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
-					<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
-					<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="welding">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="gestures">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="bugged">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-		</div>
+	<a name="mobile-contact"></a>
+	<section id="mobile-contact" style="background-color:#F3857E;color:#fff;">
 
-		<div id="contact" class="row">
+		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
+			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Contact</h2></div>
+		</header>
 
-			<div class="seven columns offset-by-three">
+		<table id="contact-table">
+			<tr class="contact-element">
+				<td class="icon-column">
+					<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
+				</td>
+				<td class="datan-column">
+					(505) 702-1110 ext.1
+				</td>
+			</tr>
+			<tr class="contact-element">
+				<td class="icon-column">
+					<img id="us_can_phone_nmbr" src="images/us_can.png"/>
+				</td>
+				<td class="datan-column">
+					(855) 898-6824
+				</td>
+			</tr>
+			<tr class="contact-element">
+				<td class="icon-column">
+					<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
+						<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+					</a>
+				</td>
+				<td class="text-column">
+					<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
+				</td>
+			</tr>
+			<tr class="contact-element">
+				<td class="icon-column">
+					<a id="sales" href="mailto:sales@ideum.com" target="_blank">
+						<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+					</a>
+				</td>
+				<td class="text-column">
+					<a id="sales" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
+				</td>
+			</tr>
+		</table>
 
-				<h1>Ready to start?</h1>
+		<p style="text-align: center;">
+			Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
+		</p>
 
-				<table id="contact-table">
-					<tr class="contact-element">
-						<td class="icon-column">
-							<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
-						</td>
-						<td class="datan-column">
-							(505) 702-1110 ext.1
-						</td>
-					</tr>
-					<tr class="contact-element">
-						<td class="icon-column">
-							<img id="us_can_phone_nmbr" src="images/us_can.png"/>
-						</td>
-						<td class="datan-column">
-							(855) 898-6824
-						</td>
-					</tr>
-					<tr class="contact-element">
-						<td class="icon-column">
-							<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
-								<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
-							</a>
-						</td>
-						<td class="text-column">
-							<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
-						</td>
-					</tr>
-					<tr class="contact-element">
-						<td class="icon-column">
-							<a id="sales" href="mailto:sales@ideum.com" target="_blank">
-								<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
-							</a>
-						</td>
-						<td class="text-column">
-							<a id="sales" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
-						</td>
-					</tr>
-				</table>
+	</section><!-- /#mobile-contact -->
 
-				<p style="text-align: center;">
-					Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
-				</p>
-				</div>
 
-		</div>
-
-	</div>
-
-	<div class="three columns right-side" id="scrollnav">
-
-		<div class="up-down-arrows">
-			<div id="up_arrow">
-				<img src="images/up_arrow.png">
-			</div>
-			<div id="down_arrow" class="on goto1a">
-				<img src="images/down_arrow.png">
-			</div>
-			<div id="dig_deeper" class="on">
-				<p>DIG DEEPER</p>
-			</div>
-		</div>
-
-	</div>
-
-</div>
-
-<section class="row" id="content-scroller">
-
-	<a class="anchorlink" name="section1"></a>
-	<section class="one-column" id="section1">
-
-		<div id="table-mobile">
-
-			<div id="text-block-mobile">
-				The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
-			</div>
-
-		</div>
-
-		<div id="latest-in-touch-mobile">
-
-		</div>
-
-		<div id="key-features">
-
-		</div>
-
-	</section>
-
-	<a class="anchorlink" name="section2"></a>
-	<section  class="one-column" id="section2">
-
-		<div id="gallery-mobile" class="row">
-			<div class="one-fourth" id="fish-n-ships">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
-					<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
-					<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="welding">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="gestures">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-			<div class="one-fourth" id="bugged">
-				<div class="v-center-container">
-					<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<a class="anchorlink" name="section3"></a>
-	<section class="one-column" id="section3">
-
-		<div id="contact-mobile" class="row">
-			This Contact (section 3) content is hidden from the user but is useful for SEO purposes. It is the counterpart of the text found in the javascript below.
-		</div>
-
-	</section>
-
-</section>
+</div><!-- end mobile -->
 
 </body>
 </html>

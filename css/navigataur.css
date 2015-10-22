@@ -27,7 +27,7 @@
 .clearfix:before, .clearfix:after { display: table; content: ""; }
 .clearfix:after { clear: both; }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 700px){
 	.menu-mobile { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
 	.menu-mobile > li { display: block; width: 100%; margin: 0; }
 	.menu-mobile > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -55,12 +55,12 @@
 	color: #DFDFDF;
 }
 
-.nav{ 
+.nav-mobile{ 
 	display: block; 
 	float: right; 
 }
 
-.nav, .menu-mobile, .menu-mobile > li, .menu-mobile > li > a{ 
+.nav-mobile, .menu-mobile, .menu-mobile > li, .menu-mobile > li > a{ 
 	height: 100%; 
 }
 
@@ -91,7 +91,7 @@
 	z-index: 2; 
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 700px){
 	.menu-mobile{
 		background: #FFFFFF;
 		border-top: 1px solid #51C1F1;
@@ -141,7 +141,7 @@
 	}
 }
 
-@media only screen and (max-width: 479px){
+@media only screen and (max-width: 699px){
 	.header-mobile > h1 { 
 		text-align: center;
 	}

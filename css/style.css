@@ -178,7 +178,7 @@ video {
 	background-color:transparent;
 	color:#fff;
 	position:fixed;
-		top:44%;
+		top:33%;
 	transition: all 0.25s ease;
 }
 #tablemenu ul {
@@ -383,16 +383,13 @@ video {
 #contact {
 	display:none;
 	position:relative;
-	top: 40%;
+	top: 24%;
 }
 
 #contact h1 {
 	font-size:3.5vmax;
 	word-spacing:.5vmax;
 	text-align:center
-}
-#contact p {
-	line-height:3.5vmin;
 }
 #contact p a {
 	color:#fff;
@@ -475,3 +472,150 @@ video {
   vertical-align: middle;
   text-align:center;
 }
+
+
+/*	##########################################	*/
+
+/*	MOBILE SITE 																*/
+
+/*	##########################################	*/
+
+#mobile {
+  background-color: #F3857E;
+  background-image:url('../images/background.png');
+  background-position-x: 16%;
+  background-repeat:no-repeat;
+  height:100%;
+}
+
+#navigation-toggle {
+	height:30px;
+	background-color: #000;
+}
+
+header::after {
+  content: '';
+  display: inline-block;
+}
+header div h2 {
+  display:inline-block;
+  margin-bottom:0;
+  vertical-align: middle;
+}
+header > div {
+  display:inline-block;
+  height: 100%;
+}
+header > div::before {
+  content: '';
+  display: inline-block;  
+  vertical-align: middle;
+  height: 100%;
+}
+
+
+
+
+
+
+#mobile {
+	margin:3% auto;
+	max-width:550px;
+	width:94%
+}
+
+.navigation-toggle a#ideumicon-mobile img {
+	float:right;
+	max-height:40px;
+}
+
+
+#mobile-table-intro .mobile-title {
+	font-family:'Roboto', san-serif;
+	font-size:14px;
+	font-weight:400;
+	padding:5% 0 0 5%;
+}
+
+#mobile-table-intro img {
+	height:auto;
+	width:100%;
+}
+
+
+
+#mobile-table-description {
+	background-color:#303030;
+	color:#F3857E;
+	font-family:'Roboto', san-serif;
+	font-size:17px;
+	font-weight:300;
+	padding:15%;
+	text-align:center;
+	letter-spacing:+1px;
+}
+
+		
+#mobile-table-latest-in-touch {
+	background-color:#F3857E;
+	color:#fff;
+}
+
+#mobile .section-header {
+	background-color:#fff;
+	color:#F3857E;
+	height:100px;
+	padding:0 20%;
+	text-align:center;
+	text-transform:uppercase;
+	width:60%;
+}
+
+#mobile .section-header div h2 {
+	font-family:'Lato', san-serif;
+	font-size:25px;
+	font-weight:900;
+	line-height:1.2em;
+}
+
+#mobile .item-group-wrap {
+	padding:1em 0;
+}
+#mobile .item-group-wrap .item-group {
+	border-bottom:3px solid #ebb7b4;
+	margin:20px auto;
+	padding:.5em 0;
+	text-align:center;
+	width:74%;
+}
+#mobile .item-group-wrap .item-group:last-of-type{ 
+	border-bottom:0px;
+}
+#mobile .item-group-wrap .item-group h3 {
+	font-family:'Lato', san-serif;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+#mobile .item-group-wrap .item-group .item-element {
+	font-family:'Lato', san-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.25em;
+	margin-bottom:1.25em;
+}
+#mobile .item-group-wrap .item-group:last-child .item-element{
+	margin-bottom:0;
+}
+					
+
+				
+
+
+
+
+
+
+
+
+
