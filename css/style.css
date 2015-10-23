@@ -134,7 +134,7 @@ video {
 	height:183px;
 	margin:auto;
 	position:fixed;
-		top: 10%; right: 0; bottom: 0; /* do not set left value */
+		top: 0%; right: 0; bottom: 0; /* do not set left value */
 	text-align:right;
 }
 
@@ -215,7 +215,7 @@ video {
 	margin:0;
 }
 #tablemenu ul li a.on {
-  font-family:'Lato', 'san-serif';
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration:underline;
   font-weight:bold;
   font-weight:900;
@@ -239,7 +239,7 @@ video {
 
 	}
 	#tablemenu ul li ul li a.on {
-	  font-family: 'Lato', san-serif;
+	  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  font-weight:900;
 	}
 	#tablemenu ul li ul li a {
@@ -342,7 +342,7 @@ video {
 }
 #table #text-block {
   display:block;
-  font-family:'Lato', 'san-serif';
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:2.25vh;
   font-weight:lighter;
   font-weight:300;
@@ -400,7 +400,8 @@ video {
 	text-decoration:none;
 }
 #contact-table .text-column a:hover {
-	text-decoration:underline;
+	font-weight:400;
+	text-decoration:none;
 }
 #contact table#contact-table {
 	margin:2vmax auto 2em auto;
@@ -428,26 +429,26 @@ video {
 	width:100%;
 }
 
-#fish-n-ships {
-	background-image:url('../images/gallery/fish-n-ships.jpg');
+#gallery1 {
+	background-image:url('../images/gallery/manufacturing/manu-1.jpg');
 	background-size:cover;
 	background-position:center;
 	width:25%;
 }
-#welding {
-	background-image:url('../images/gallery/welding.jpg');
+#gallery2 {
+	background-image:url('../images/gallery/DoE/doe-1.jpg');
 	background-size:cover;
 	background-position:center;
 	width:25%;
 }
-#gestures{
-	background-image:url('../images/gallery/gestures.jpg');
+#gallery3{
+	background-image:url('../images/gallery/SLAC/slac-1.jpg');
 	background-size:cover;
 	background-position:center;
 	width:25%;
 }
-#bugged {
-	background-image:url('../images/gallery/bugged.jpg');
+#gallery4 {
+	background-image:url('../images/gallery/Video/vid.jpg');
 	background-size:cover;
 	background-position:center;
 	width:25%;
@@ -485,7 +486,7 @@ video {
   background-image:url('../images/background.png');
   background-position-x: 16%;
   background-repeat:no-repeat;
-  height:100%;
+  height:auto;
 }
 
 #navigation-toggle {
@@ -514,9 +515,9 @@ header > div::before {
 }
 
 
-
-
-
+/*--------------------------------
+      Mobile-Specific Styles
+---------------------------------*/
 
 #mobile {
 	margin:3% auto;
@@ -524,13 +525,12 @@ header > div::before {
 	width:94%
 }
 
-.navigation-toggle a#ideumicon-mobile img {
+#mobile .navigation-toggle a#ideumicon-mobile img {
 	float:right;
 	max-height:40px;
 }
 
-
-#mobile-table-intro .mobile-title {
+#mobile #mobile-table-intro .mobile-title {
 	font-family:'Roboto', san-serif;
 	font-size:14px;
 	font-weight:400;
@@ -541,8 +541,6 @@ header > div::before {
 	height:auto;
 	width:100%;
 }
-
-
 
 #mobile-table-description {
 	background-color:#303030;
@@ -555,7 +553,6 @@ header > div::before {
 	letter-spacing:+1px;
 }
 
-		
 #mobile-table-latest-in-touch {
 	background-color:#F3857E;
 	color:#fff;
@@ -565,14 +562,14 @@ header > div::before {
 	background-color:#fff;
 	color:#F3857E;
 	height:100px;
-	padding:0 20%;
+	padding:0%;
 	text-align:center;
 	text-transform:uppercase;
-	width:60%;
+	width:100%;
 }
 
 #mobile .section-header div h2 {
-	font-family:'Lato', san-serif;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:25px;
 	font-weight:900;
 	line-height:1.2em;
@@ -588,34 +585,183 @@ header > div::before {
 	text-align:center;
 	width:74%;
 }
-#mobile .item-group-wrap .item-group:last-of-type{ 
+#mobile .item-group-wrap .item-group:last-of-type { 
 	border-bottom:0px;
 }
 #mobile .item-group-wrap .item-group h3 {
-	font-family:'Lato', san-serif;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:14px;
 	font-weight:600;
 	text-transform:uppercase;
 }
 #mobile .item-group-wrap .item-group .item-element {
-	font-family:'Lato', san-serif;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:14px;
 	font-weight:300;
 	line-height:1.25em;
 	margin-bottom:1.25em;
 }
-#mobile .item-group-wrap .item-group:last-child .item-element{
+#mobile .item-group-wrap .item-group:last-child .item-element:last-of-type{
 	margin-bottom:0;
 }
-					
 
-				
+#mobile #mobile-gallery {
+	background-color:#303030;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	font-weight:300;
+	text-transform:uppercase;
+}
+#mobile #mobile-gallery .gallery-item-group {
+	padding:1em;
+}
+#mobile #mobile-gallery .gallery-item-group a {
+	border-bottom:1px solid #423d3d;
+	color:#ffffff;
+	display:block;
+	line-height:1.5em;
+	padding:5%;
+	text-decoration:none;
+	width:90%;
+}
+#mobile #mobile-gallery .gallery-item-group a.hide {
+	display:none;
+}
+#mobile #mobile-gallery .gallery-item-group a:hover, #mobile #mobile-gallery #mobile-gallery .gallery-item-group a:active {
+	color:#F3857E;
+}
+#mobile #mobile-gallery .gallery-item-group a:last-of-type  {
+	border:none;
+}
+
+#mobile #mobile-contact {
+	background-color:#F3857E;
+	color:#fff;
+}
+#mobile #mobile-contact table {
+	margin:10%  6%;
+}
+#mobile #mobile-contact table tr {
+	padding:0 5%;
+}
+#mobile #mobile-contact table tr td {
+	border:none;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:300;
+	padding: 8px 15px;
+}
+#mobile #mobile-contact table tr td.text-column {
+	padding: 8px 0;
+}
+#mobile #mobile-contact table tr td.icon-column img {
+	width:60px;
+}
+#mobile #mobile-contact p {
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14.4px;
+	font-weight:300;
+	margin:0 auto;
+	padding:0 0 50px 0;
+	text-align:center;
+	width:76%;
+}
+	
+#mobile	.navigation-toggle {
+	height:62px;
+	padding:1em;
+}
+#mobile	.navigation-toggle a#ideumicon-mobile img {
+	float:left;
+	width:80px;
+}
+#mobile	.navigation-toggle span {
+	float:right;
+	position:relative;
+		top:6px;
+}
+#mobile	.navigation-toggle span:hover {
+	cursor:pointer;
+}
+#mobile #utility {
+	float:right;
+	margin:8px 10px 0 0;
+}
+#mobile #utility #socialicon img, #mobile #utility #tableicon img {
+  height: auto;
+  margin: 0;
+  width: 20px;
+}
+#mobile #utility #downloadicon img {
+  height: auto;
+  margin: 0;
+  width:22px;
+  position:relative;
+		top:1px;
+}
+#mobile #utility #tableicon img {
+	margin-right:10px;
+	position:relative;
+		top:1px;
+}
 
 
+#mobile #tablemenu-mobile  {
+	background-color:#303030;
+	margin-top:-16px;
+}
+#mobile #tablemenu-mobile ul li {
+	list-style:none;
+	list-style-image:none;
+}
+#mobile #tablemenu-mobile ul li ul {
+	margin:0;
+}
+#mobile #tablemenu-mobile ul li ul li a {
+	padding-left:15%;
+}
+#mobile #tablemenu-mobile ul li a {
+	border-bottom:1px solid #423d3d;
+	color:#ffffff;
+	display:block;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14.4px;
+	font-weight:300;
+	line-height:1.5em;
+	padding:5%;
+	text-decoration:none;
+	text-transform:uppercase;
+	width:90%;
+}
+#mobile #tablemenu-mobile ul li a:hover, #mobile #tablemenu-mobile ul li a:active {
+	color:#F3857E;
+}
 
+#mobile #footer {
+	background-color:#303030;
+	font-family: "Robot0", sans-serif;
+	font-size:12px;
+	font-weight:700;
+	letter-spacing:+2px;
+	padding:30px;
+	text-align:center;
+	text-transform:uppercase;
+}
 
+#mobile #footer a.ideum-link {
+	font-weight:400;
+	text-transform:none;
+}
 
+#mobile #footer a, #mobile #footer span {
+	color:#ffffff;
+	display:block;
+	line-height:3em;
+	text-decoration:none;
+	width:100%;
+}
 
-
-
+#mobile #footer a:hover, #mobile #footer a:active {
+	color:#F3857E;
+}
 

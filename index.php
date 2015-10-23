@@ -29,15 +29,26 @@
 		$(document).ready(function(){
 			//Examples of how to assign the Colorbox event to elements
 			$(".group1").colorbox({rel:'group1'});
-			$(".group2").colorbox({rel:'group2', transition:"fade"});
-			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-			$(".group4").colorbox({rel:'group4', slideshow:true});
-			$("a.gallery").colorbox({rel:"group1"});
+			$(".group2").colorbox({rel:'group2'});
+			$(".group3").colorbox({rel:'group3'});
+			$(".group4").colorbox({rel:'group4'});
+			$(".mgroup1").colorbox({rel:'mgroup1'});
+			$(".mgroup2").colorbox({rel:'mgroup2'});
+			$(".mgroup3").colorbox({rel:'mgroup3'});
+			$(".mgroup4").colorbox({rel:'mgroup4'});
+			$(".dvimeo").colorbox({iframe:true, width:"100%", height:"100%"});
+			$(".mvimeo").colorbox({iframe:true, width:"100%", height:"100%"});
+
+
+			//Examples of how to assign the Colorbox event to elements
+			$(".groupa").colorbox({rel:'groupa'});
+			$(".groupb").colorbox({rel:'groupb', transition:"fade"});
+			$(".groupc").colorbox({rel:'groupc', transition:"none", width:"75%", height:"75%"});
+			$(".groupd").colorbox({rel:'groupd', slideshow:true});
 			$(".ajax").colorbox();
 			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 			$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
 			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-			$(".share").colorbox({iframe:true, width:"400", height:"300"});
 			$(".inline").colorbox({inline:true, width:"50%"});
 			$(".callbacks").colorbox({
 				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
@@ -142,26 +153,38 @@
 			</div>
 
 			<div id="gallery" class="row">
-				<div class="one-fourth" id="fish-n-ships">
+				<div class="one-fourth" id="gallery1">
 					<div class="v-center-container">
-						<a class="touchme v-center-element gallery" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption."></a>
-						<a class="gallery" href="http://ideum.com/wp-content/uploads/2014/09/inka-1800x800.jpg" title="Replace this with contextually appropriate caption."></a>
-						<a class="gallery" href="http://ideum.com/wp-content/uploads/2015/03/medinet-habu-header.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="touchme v-center-element group1" href="images/gallery/Manufacturing/manu-1.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-2.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-3.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-4.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-5.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-6.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-7.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-8.jpg" title="Short caption - this long."></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-9.jpg" title="Short caption - this long."></a>
 					</div>
 				</div>
-				<div class="one-fourth" id="welding">
+				<div class="one-fourth" id="gallery2">
 					<div class="v-center-container">
-						<a class="touchme v-center-element gallery" href="images/gallery/welding.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="touchme v-center-element group2" href="images/gallery/DoE/doe-1.jpg" title="Short caption - this long"></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-2.jpg" title="Short caption - this long"></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-3.jpg" title="Short caption - this long"></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-4.jpg" title="Short caption - this long"></a>
 					</div>
 				</div>
-				<div class="one-fourth" id="gestures">
+				<div class="one-fourth" id="gallery3">
 					<div class="v-center-container">
-						<a class="touchme v-center-element gallery" href="images/gallery/gestures.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="touchme v-center-element group3" href="images/gallery/SLAC/slac-1.jpg" title="Short caption - this long"></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-2.jpg" title="Short caption - this long"></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-3.jpg" title="Short caption - this long"></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-4.jpg" title="Short caption - this long"></a>
 					</div>
 				</div>
-				<div class="one-fourth" id="bugged">
+				<div class="one-fourth" id="gallery4">
 					<div class="v-center-container">
-						<a class="touchme v-center-element gallery" href="images/gallery/bugged.jpg" title="Replace this with contextually appropriate caption."></a>
+						<a class="touchme v-center-element dvimeo" href="https://player.vimeo.com/video/143400280" title="The table in action"></a>
 					</div>
 				</div>
 			</div>
@@ -274,14 +297,35 @@
 
 	<!-- this will be mobile menu -->
 	<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#tablemenu-mobile">
-		<a id="ideumicon-mobile" href="http://ideum.com" target="_blank">
+
+		<a id="ideumicon-mobile" href="/" target="_blank">
 			<img src="images/ideum_logo.png">
 		</a>
-		<span>Menu</span>
-	</div>
+
+		<div id="utility">
+
+			<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
+				<img src="images/download.png" height="64px" width="64px">
+			</a>
+
+			<a id="socialicon" class="share cboxElement" href="share.html">
+				<img src="images/share_this.png">
+			</a>
+
+			<a id="tableicon" href="http://ideum.com/touch-tables/platform/" target="_blank">
+				<img src="images/table_icon.png">
+			</a>
+
+			<span><img src="images/hamburger.png"></span>
+
+		</div><!-- /#utility .three .columns .right-side -->
+
+	</div><!-- / .navigation-toggle -->
+
 	<nav id="tablemenu-mobile">
+
 		<ul>
-			<li class="on"><a href="#mobile-intro">The Multitouch Table</a>
+			<li><a href="#mobile-intro">The Multitouch Table</a>
 				<ul>
 					<li><a href="#mobile-latest-in-touch">LATEST IN TOUCH</a></li>
 					<li><a href="#mobile-key-features">KEY FEATURES</a></li>
@@ -290,6 +334,7 @@
 			<li><a href="#mobile-gallery">Gallery</a></li>
 			<li><a href="#mobile-contact">Contact</a></li>
 		</ul>
+
 	</nav>
 	<!-- end mobile menu -->
 
@@ -303,7 +348,7 @@
 
 		<img src="images/table-content/table-mobile2.png" alt="The PLATFORM 55 4K P-CAP MULTITOUCH TABLE">
 
-	</section>
+	</section><!-- /#mobile-table-intro -->
 
 	<section id="mobile-table-description">
 
@@ -311,12 +356,13 @@
 			The Platform 55 4K P-Cap Multitouch Table uses the latest in touch technology, graphics performance and industrial design for a world-class interactive experience. The Platform 55 is the new standard in quality and performance for any application.
 		</p>
 
-	</section><!-- /#mobile-table-intro -->
+	</section><!-- /#mobile-table-descritpion -->
 
 	<a name="mobile-latest-in-touch"></a>
 	<section id="mobile-table-latest-in-touch">
 
 		<header class="section-header">
+
 			<div>
 				<h2>
 					The Latest<br>in Touch
@@ -388,69 +434,69 @@
 	</section><!-- /#mobile-table-latest-in-touch -->
 
 	<a name="mobile-key-features"></a>
-	<section id="mobile-table-key-features" style="background-color:#F3857E;color:#fff;">
+	<section id="mobile-table-key-features">
 
-		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
-			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Key Features</h2></div>
+		<header class="section-header">
+			<div><h2>Key Features</h2></div>
 		</header>
 
 		<div class="item-group-wrap" style="padding:1em 0;">	
 
-			<div class="item-group" style="border-bottom:3px solid #ebb7b4;margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+			<div class="item-group">
 
-				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+				<h3>
 					Stay Connected
 				</h3>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Ethernet
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					WiFi
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Bluetooth
 				</div>
 
 			</div><!-- /.item-group -->
 
-			<div class="item-group" style="border-bottom:3px solid #ebb7b4;margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+			<div class="item-group">
 
-				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+				<h3>
 					Windows 8 &amp; Beyond
 				</h3>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Windows 10 64-bit Professional installed
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Intel<sup>&reg;</sup> i7 Quad Core Processor
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Solid-State Drive
 				</div>
 
 			</div><!-- /.item-group -->
 
-			<div class="item-group" style="margin:20px auto;padding:.5em 0;text-align:center;width:74%;">
+			<div class="item-group">
 
-				<h3 style="font-family:'Lato', san-serif;font-size:14px;font-weight:600;text-transform:uppercase;">
+				<h3>
 					Intelligent Design
 				</h3>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Lifetime license for<br>GestureWorks Core
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;margin-bottom:1.25em;">
+				<div class="item-element">
 					Timely support and<br>upgrades for life
 				</div>
 
-				<div class="item-element" style="font-family:'Lato', san-serif;font-size:14px;font-weight:300;line-height:1.25em;">
+				<div class="item-element">
 					Solid-State Drive
 				</div>
 
@@ -463,21 +509,36 @@
 
 
 	<a name="mobile-gallery"></a>
-	<section id="mobile-gallerry" style="background-color:#303030;color:#fff;">
+	<section id="mobile-gallery">
 
-		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
-			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Gallery</h2></div>
+		<header class="section-header">
+			<div><h2>Gallery</h2></div>
 		</header>
 		
 		<div class="gallery-item-group">
 
-			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">The Table in Action</a>
+			<a class="mgroup1" href="images/gallery/Manufacturing/mobile/manu-1.jpg" title="Short caption - this long">Manufacturing</a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-2.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-3.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-4.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-5.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-6.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-7.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-8.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-9.jpg" title="Short caption - this long"></a>
 
-			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Manufacturing</a>
+			<a class="mgroup2" href="images/gallery/DoE/mobile/doe-1.jpg" title="Short caption - this long">Department of Energy</a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-2.jpg" title="Short caption - this long"></a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-3.jpg" title="Short caption - this long"></a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-4.jpg" title="Short caption - this long"></a>
 
-			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Project X</a>
+			<a class="mgroup3" href="images/gallery/SLAC/mobile/slac-1.jpg" title="Short caption - this long">Stanford Linear<br>Accelarator Center</a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-2.jpg" title="Short caption - this long"></a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-3.jpg" title="Short caption - this long"></a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-4.jpg" title="Short caption - this long"></a>
 
-			<a class="gallery group1" href="images/gallery/fish-n-ships.jpg" title="Replace this with contextually appropriate caption.">Project Y</a>
+			<a class="mvimeo" href="https://player.vimeo.com/video/143400280" title="">The Table in Action</a>
+
 
 		</div><!-- /.gallery-item-group -->
 
@@ -486,10 +547,10 @@
 
 
 	<a name="mobile-contact"></a>
-	<section id="mobile-contact" style="background-color:#F3857E;color:#fff;">
+	<section id="mobile-contact">
 
-		<header class="section-header" style="background-color:#fff;color:#F3857E;height:100px;padding:0 20%;text-align:center;text-transform:uppercase;width:60%;">
-			<div><h2 style="font-family:'Lato', san-serif;font-size:25px;font-weight:900;line-height:1.2em;">Contact</h2></div>
+		<header class="section-header">
+			<div><h2>Ready to Start?</h2></div>
 		</header>
 
 		<table id="contact-table">
@@ -497,7 +558,7 @@
 				<td class="icon-column">
 					<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
 				</td>
-				<td class="datan-column">
+				<td class="text-column">
 					(505) 702-1110 ext.1
 				</td>
 			</tr>
@@ -505,7 +566,7 @@
 				<td class="icon-column">
 					<img id="us_can_phone_nmbr" src="images/us_can.png"/>
 				</td>
-				<td class="datan-column">
+				<td class="text-column">
 					(855) 898-6824
 				</td>
 			</tr>
@@ -531,11 +592,21 @@
 			</tr>
 		</table>
 
-		<p style="text-align: center;">
-			Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
+		<p>
+			Platforms are sold domestically and internationally. We also rent the Platforms in the US and Canada.
 		</p>
 
 	</section><!-- /#mobile-contact -->
+
+	<section id="footer">
+
+		<a class="ideum-link" href="http://ideum.com">Ideum</a>
+
+		<a href="http://ideum.com/legal/">PRIVACY &amp; TERMS</a>
+
+		<span>COPYRIGHT 2015</span>
+
+	</section>
 
 
 </div><!-- end mobile -->
