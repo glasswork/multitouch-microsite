@@ -53,68 +53,68 @@ function checkSize(){
       var $win = $(window); // set the win var
       var winvh = $win.height(); // Get the window height.
 
-      $('#content-information').on('mouseenter', '#fish-n-ships', function( event ) {
-        //console.log('fish-n-ships is being hovered over');
-        $("#fish-n-ships .touchme").css("visibility", "visible");
-        $("#fish-n-ships").css("width", "40%");
-        $("#welding").css("width", "20%");
-        $("#gestures").css("width", "20%");
-        $("#bugged").css("width", "20%");
-      }).on('mouseleave', '#fish-n-ships', function( event ) {
-        //console.log('fish-n-ships is no longer being hovered over');
-        $("#fish-n-ships .touchme").css("visibility", "hidden");
-        $("#fish-n-ships").css("width", "25%");
-        $("#welding").css("width", "25%");
-        $("#gestures").css("width", "25%");
-        $("#bugged").css("width", "25%");
+      $('#content-information').on('mouseenter', '#gallery1', function( event ) {
+        //console.log('gallery1 is being hovered over');
+        $("#gallery1 .touchme").css("visibility", "visible");
+        $("#gallery1").css("width", "40%");
+        $("#gallery2").css("width", "20%");
+        $("#gallery3").css("width", "20%");
+        $("#gallery4").css("width", "20%");
+      }).on('mouseleave', '#gallery1', function( event ) {
+        //console.log('gallery1 is no longer being hovered over');
+        $("#gallery1 .touchme").css("visibility", "hidden");
+        $("#gallery1").css("width", "25%");
+        $("#gallery2").css("width", "25%");
+        $("#gallery3").css("width", "25%");
+        $("#gallery4").css("width", "25%");
       });
 
-      $('#content-information').on('mouseenter', '#welding', function( event ) {
-        //console.log('welding is being hovered over');
-        $("#welding .touchme").css("visibility", "visible");
-        $("#fish-n-ships").css("width", "20%");
-        $("#welding").css("width", "40%");
-        $("#gestures").css("width", "20%");
-        $("#bugged").css("width", "20%");
-      }).on('mouseleave', '#welding', function( event ) {
-        //console.log('welding is no longer being hovered over');
-        $("#welding .touchme").css("visibility", "hidden");
-        $("#fish-n-ships").css("width", "25%");
-        $("#welding").css("width", "25%");
-        $("#gestures").css("width", "25%");
-        $("#bugged").css("width", "25%");
+      $('#content-information').on('mouseenter', '#gallery2', function( event ) {
+        //console.log('gallery2 is being hovered over');
+        $("#gallery2 .touchme").css("visibility", "visible");
+        $("#gallery1").css("width", "20%");
+        $("#gallery2").css("width", "40%");
+        $("#gallery3").css("width", "20%");
+        $("#gallery4").css("width", "20%");
+      }).on('mouseleave', '#gallery2', function( event ) {
+        //console.log('gallery2 is no longer being hovered over');
+        $("#gallery2 .touchme").css("visibility", "hidden");
+        $("#gallery1").css("width", "25%");
+        $("#gallery2").css("width", "25%");
+        $("#gallery3").css("width", "25%");
+        $("#gallery4").css("width", "25%");
       });
 
-      $('#content-information').on('mouseenter', '#gestures', function( event ) {
-        //console.log('gestures is being hovered over');
-        $("#gestures .touchme").css("visibility", "visible");
-        $("#fish-n-ships").css("width", "20%");
-        $("#welding").css("width", "20%");
-        $("#gestures").css("width", "40%");
-        $("#bugged").css("width", "20%");
-      }).on('mouseleave', '#gestures', function( event ) {
-        //console.log('gestures is no longer being hovered over');
-        $("#gestures .touchme").css("visibility", "hidden");
-        $("#fish-n-ships").css("width", "25%");
-        $("#welding").css("width", "25%");
-        $("#gestures").css("width", "25%");
-        $("#bugged").css("width", "25%");
+      $('#content-information').on('mouseenter', '#gallery3', function( event ) {
+        //console.log('gallery3 is being hovered over');
+        $("#gallery3 .touchme").css("visibility", "visible");
+        $("#gallery1").css("width", "20%");
+        $("#gallery2").css("width", "20%");
+        $("#gallery3").css("width", "40%");
+        $("#gallery4").css("width", "20%");
+      }).on('mouseleave', '#gallery3', function( event ) {
+        //console.log('gallery3 is no longer being hovered over');
+        $("#gallery3 .touchme").css("visibility", "hidden");
+        $("#gallery1").css("width", "25%");
+        $("#gallery2").css("width", "25%");
+        $("#gallery3").css("width", "25%");
+        $("#gallery4").css("width", "25%");
       });
 
-      $('#content-information').on('mouseenter', '#bugged', function( event ) {
-        //console.log('bugged is being hovered over');
-        $("#bugged .touchme").css("visibility", "visible");
-        $("#fish-n-ships").css("width", "20%");
-        $("#welding").css("width", "20%");
-        $("#gestures").css("width", "20%");
-        $("#bugged").css("width", "40%");
-      }).on('mouseleave', '#bugged', function( event ) {
-        //console.log('bugged is no longer being hovered over');
-        $("#bugged .touchme").css("visibility", "hidden");
-        $("#fish-n-ships").css("width", "25%");
-        $("#welding").css("width", "25%");
-        $("#gestures").css("width", "25%");
-        $("#bugged").css("width", "25%");
+      $('#content-information').on('mouseenter', '#gallery4', function( event ) {
+        //console.log('gallery4 is being hovered over');
+        $("#gallery4 .touchme").css("visibility", "visible");
+        $("#gallery1").css("width", "20%");
+        $("#gallery2").css("width", "20%");
+        $("#gallery3").css("width", "20%");
+        $("#gallery4").css("width", "40%");
+      }).on('mouseleave', '#gallery4', function( event ) {
+        //console.log('gallery4 is no longer being hovered over');
+        $("#gallery4 .touchme").css("visibility", "hidden");
+        $("#gallery1").css("width", "25%");
+        $("#gallery2").css("width", "25%");
+        $("#gallery3").css("width", "25%");
+        $("#gallery4").css("width", "25%");
       });
       
 
@@ -143,8 +143,10 @@ function checkSize(){
           $('#up_arrow').removeClass('on');
           $('#up_arrow').removeClass('goto1');
           $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
 
           $('#down_arrow').addClass('on');
+          $('#down_arrow').removeClass('goto1');
           $('#down_arrow').addClass('goto1a');
           $('#down_arrow').removeClass('goto1b');
 
@@ -164,8 +166,10 @@ function checkSize(){
             $('#up_arrow').removeClass('on');
             $('#up_arrow').removeClass('goto1');
             $('#up_arrow').removeClass('goto1a');
+            $('#up_arrow').removeClass('goto1b');
 
             $('#down_arrow').addClass('on');
+            $('#down_arrow').removeClass('goto1');
             $('#down_arrow').addClass('goto1a');
             $('#down_arrow').removeClass('goto1b');
 
@@ -187,8 +191,10 @@ function checkSize(){
             $('#up_arrow').addClass('on');
             $('#up_arrow').addClass('goto1');
             $('#up_arrow').removeClass('goto1a');
+            $('#up_arrow').removeClass('goto1b');
 
             $('#down_arrow').addClass('on');
+            $('#down_arrow').removeClass('goto1');
             $('#down_arrow').removeClass('goto1a');
             $('#down_arrow').addClass('goto1b');
 
@@ -214,8 +220,10 @@ function checkSize(){
             $('#up_arrow').addClass('on');
             $('#up_arrow').addClass('goto1');
             $('#up_arrow').removeClass('goto1a');
+            $('#up_arrow').removeClass('goto1b');
 
             $('#down_arrow').addClass('on');
+            $('#down_arrow').removeClass('goto1');
             $('#down_arrow').removeClass('goto1a');
             $('#down_arrow').addClass('goto1b');
 
@@ -237,8 +245,10 @@ function checkSize(){
             $('#up_arrow').addClass('on');
             $('#up_arrow').removeClass('goto1');
             $('#up_arrow').addClass('goto1a');
+            $('#up_arrow').removeClass('goto1b');
 
             $('#down_arrow').removeClass('on');
+            $('#down_arrow').removeClass('goto1');
             $('#down_arrow').removeClass('goto1a');
             $('#down_arrow').removeClass('goto1b');
 
