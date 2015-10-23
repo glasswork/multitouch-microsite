@@ -460,20 +460,17 @@ there.
   .header-mobile {
     display:block;
   }
-  .navigation-toggle {
-    height:62px;
-  }
 
 }
 
 /* Larger than small phone*/
 @media (min-width: 320px) {
-  
+
 }
 
 /* Larger than Phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  
+ 
 }
 
 
@@ -507,7 +504,7 @@ there.
   }
   #downloadicon img, #socialicon img, #tableicon img {
     height:auto;
-    width: 32px;
+    width:32px;
   }
   .navigation-toggle {
     display:none;
