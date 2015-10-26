@@ -272,8 +272,10 @@ function checkSize(){
           $('#up_arrow').addClass('on');
           $('#up_arrow').addClass('goto1');
           $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
 
           $('#down_arrow').addClass('on');
+          $('#down_arrow').removeClass('goto1');
           $('#down_arrow').removeClass('goto1a');
           $('#down_arrow').addClass('goto1b');
      
@@ -295,8 +297,10 @@ function checkSize(){
           $('#up_arrow').addClass('on');
           $('#up_arrow').removeClass('goto1');
           $('#up_arrow').addClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
 
           $('#down_arrow').removeClass('on');
+          $('#down_arrow').removeClass('goto1');
           $('#down_arrow').removeClass('goto1a');
           $('#down_arrow').removeClass('goto1b');
 
@@ -330,7 +334,14 @@ function checkSize(){
           $('#section3navitem').removeClass('on');
 
           $('#up_arrow').removeClass('on');
+          $('#up_arrow').removeClass('goto1');
+          $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
+
           $('#down_arrow').removeClass('on');
+          $('#down_arrow').removeClass('goto1');
+          $('#down_arrow').removeClass('goto1a');
+          $('#down_arrow').removeClass('goto1b');
 
           $('#dig_deeper').removeClass('on');
 
@@ -357,11 +368,16 @@ function checkSize(){
           $('#section3navitem').addClass('on');
 
           $('#up_arrow').removeClass('on');
+          $('#up_arrow').removeClass('goto1');
+          $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
+
           $('#down_arrow').removeClass('on');
+          $('#down_arrow').removeClass('goto1');
+          $('#down_arrow').removeClass('goto1a');
+          $('#down_arrow').removeClass('goto1b');
 
           $('#dig_deeper').removeClass('on');
-
-          //document.getElementById("contact").innerHTML = $contactContent;
 
           document.getElementById("table").style.display="none";
           document.getElementById("latest-in-touch").style.display="none";
@@ -389,11 +405,16 @@ function checkSize(){
           $('#section3navitem').removeClass('on');
 
           $('#up_arrow').removeClass('on');
+          $('#up_arrow').removeClass('goto1');
+          $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
+
           $('#down_arrow').removeClass('on');
+          $('#down_arrow').removeClass('goto1');
+          $('#down_arrow').removeClass('goto1a');
+          $('#down_arrow').removeClass('goto1b');
 
           $('#dig_deeper').removeClass('on');
-
-          //document.getElementById("content-information").innerHTML = $galleryContent;
 
           document.getElementById("table").style.display="none";document.getElementById("table").style.display="none";
           document.getElementById("latest-in-touch").style.display="none";
@@ -418,11 +439,16 @@ function checkSize(){
           $('#section3navitem').addClass('on');
 
           $('#up_arrow').removeClass('on');
+          $('#up_arrow').removeClass('goto1');
+          $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
+
           $('#down_arrow').removeClass('on');
+          $('#down_arrow').removeClass('goto1');
+          $('#down_arrow').removeClass('goto1a');
+          $('#down_arrow').removeClass('goto1b');
 
           $('#dig_deeper').removeClass('on');
-
-          //document.getElementById("content-information").innerHTML = $contactContent;
 
           document.getElementById("table").style.display="none";
           document.getElementById("latest-in-touch").style.display="none";
@@ -449,8 +475,10 @@ function checkSize(){
           $('#up_arrow').removeClass('on');
           $('#up_arrow').removeClass('goto1');
           $('#up_arrow').removeClass('goto1a');
+          $('#up_arrow').removeClass('goto1b');
 
           $('#down_arrow').addClass('on');
+          $('#down_arrow').removeClass('goto1');
           $('#down_arrow').addClass('goto1a');
           $('#down_arrow').removeClass('goto1b');
 
