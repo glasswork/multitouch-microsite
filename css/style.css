@@ -8,6 +8,7 @@ html, body {
 	padding:0; 
 	position:relative;
 	width: 100%;
+	overflow: hidden;
 }
 
 #downloadicon, #ideumicon, #socialicon, #tableicon {

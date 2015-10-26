@@ -6,6 +6,7 @@ window.onload = function () {
         $('#skip_animation').fadeOut(250);
         $('svg').fadeOut(250);
         $('video').remove();
+        $('html, body').css("overflow", "visible");
     });
 
     var window_width = window.innerWidth;
@@ -178,5 +179,5 @@ window.onload = function () {
         $('video').remove();}, 16000);
 
     setTimeout(function(){
-        $('html', 'body').css('overflow','visible');}, 7200);
+        $('html, body').css('overflow','visible');}, 14500);
 }
