@@ -7,12 +7,20 @@
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no minimal-ui">
-	
+
+	<!-- begin meta / ogp data -->
+	<meta name="description" content="The Platform is a line of high-performance projected capacitive touch 46 inch HD and 55 inch 4K UHD multitouch tables supporting 50+ touch points. Designed and built in the USA.">
+	<meta property="og:site_name" content="The Platform Multitouch Table by Ideum">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://themultitouchtable.com"> 
+	<meta property="og:title" content="The Multitouch Table by Ideum">
+	<meta property="og:image" content="http://themultitouchtable.com/images/multitouchtable-share.jpg">
+	<meta property="og:description" content="The Platform is a line of high-performance projected capacitive touch 46 inch HD and 55 inch 4K UHD multitouch tables supporting 50+ touch points. Designed and built in the USA."/>
+		
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css"/>
 	<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
-	<link rel="stylesheet" href="navigation-responsive.css" />
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:3900,700,400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300' rel='stylesheet' type='text/css'>
@@ -36,6 +44,7 @@
 			$(".mgroup2").colorbox({rel:'mgroup2'});
 			$(".mgroup3").colorbox({rel:'mgroup3'});
 			$(".mgroup4").colorbox({rel:'mgroup4'});
+			$(".share").colorbox({iframe:true, width:"600", height:"300px"});
 			$(".dvimeo").colorbox({iframe:true, width:"100%", height:"100%"});
 			$(".mvimeo").colorbox({iframe:true, width:"100%", height:"100%"});
 
