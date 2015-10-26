@@ -84,7 +84,6 @@
 
 <div id="desktop-n-tablet">
 
-	<!--
 	<div class="skip_animation">
 		<a id="skip_animation">Skip Animation</a>
 	</div>
@@ -95,7 +94,6 @@
 
 	<video id="video">
 	</video>
-	-->
 
 	<div class="row" id="starting_links">
 
@@ -164,31 +162,31 @@
 			<div id="gallery" class="row">
 				<div class="one-fourth" id="gallery1">
 					<div class="v-center-container">
-						<a class="touchme v-center-element group1" href="images/gallery/Manufacturing/manu-1.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-2.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-3.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-4.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-5.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-6.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-7.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-8.jpg" title="Short caption - this long."></a>
-						<a class="group1 hide" href="images/gallery/Manufacturing/manu-9.jpg" title="Short caption - this long."></a>
+						<a class="touchme v-center-element group1" href="images/gallery/Manufacturing/manu-1.jpg" title="Manufacturing"></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-2.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-3.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-4.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-5.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-6.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-7.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-8.jpg" title=""></a>
+						<a class="group1 hide" href="images/gallery/Manufacturing/manu-9.jpg" title=""></a>
 					</div>
 				</div>
 				<div class="one-fourth" id="gallery2">
 					<div class="v-center-container">
-						<a class="touchme v-center-element group2" href="images/gallery/DoE/doe-1.jpg" title="Short caption - this long"></a>
-						<a class="group2 hide" href="images/gallery/DoE/doe-2.jpg" title="Short caption - this long"></a>
-						<a class="group2 hide" href="images/gallery/DoE/doe-3.jpg" title="Short caption - this long"></a>
-						<a class="group2 hide" href="images/gallery/DoE/doe-4.jpg" title="Short caption - this long"></a>
+						<a class="touchme v-center-element group2" href="images/gallery/DoE/doe-1.jpg" title="Department of Energy"></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-2.jpg" title=""></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-3.jpg" title=""></a>
+						<a class="group2 hide" href="images/gallery/DoE/doe-4.jpg" title=""></a>
 					</div>
 				</div>
 				<div class="one-fourth" id="gallery3">
 					<div class="v-center-container">
-						<a class="touchme v-center-element group3" href="images/gallery/SLAC/slac-1.jpg" title="Short caption - this long"></a>
-						<a class="group3 hide" href="images/gallery/SLAC/slac-2.jpg" title="Short caption - this long"></a>
-						<a class="group3 hide" href="images/gallery/SLAC/slac-3.jpg" title="Short caption - this long"></a>
-						<a class="group3 hide" href="images/gallery/SLAC/slac-4.jpg" title="Short caption - this long"></a>
+						<a class="touchme v-center-element group3" href="images/gallery/SLAC/slac-1.jpg" title="Stanford Linear Accelarator Center"></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-2.jpg" title=""></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-3.jpg" title=""></a>
+						<a class="group3 hide" href="images/gallery/SLAC/slac-4.jpg" title=""></a>
 					</div>
 				</div>
 				<div class="one-fourth" id="gallery4">
@@ -346,7 +344,6 @@
 
 	</nav>
 	<!-- end mobile menu -->
-
 	
 	<a name="mobile-intro"></a>
 	<section id="mobile-table-intro">
@@ -439,7 +436,6 @@
 
 		</div><!-- /.item-group-warp -->
 
-
 	</section><!-- /#mobile-table-latest-in-touch -->
 
 	<a name="mobile-key-features"></a>
@@ -513,9 +509,7 @@
 
 		</div><!-- /.item-group-warp -->
 
-
 	</section><!-- /#mobile-table-lkey-features -->
-
 
 	<a name="mobile-gallery"></a>
 	<section id="mobile-gallery">
@@ -526,34 +520,31 @@
 		
 		<div class="gallery-item-group">
 
-			<a class="mgroup1" href="images/gallery/Manufacturing/mobile/manu-1.jpg" title="Short caption - this long">Manufacturing</a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-2.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-3.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-4.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-5.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-6.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-7.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-8.jpg" title="Short caption - this long"></a>
-			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-9.jpg" title="Short caption - this long"></a>
+			<a class="mgroup1" href="images/gallery/Manufacturing/mobile/manu-1.jpg" title="Manufacturing">Manufacturing</a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-2.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-3.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-4.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-5.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-6.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-7.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-8.jpg" title=""></a>
+			<a class="mgroup1 hide" href="images/gallery/Manufacturing/mobile/manu-9.jpg" title=""></a>
 
 			<a class="mgroup2" href="images/gallery/DoE/mobile/doe-1.jpg" title="Short caption - this long">Department of Energy</a>
-			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-2.jpg" title="Short caption - this long"></a>
-			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-3.jpg" title="Short caption - this long"></a>
-			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-4.jpg" title="Short caption - this long"></a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-2.jpg" title=""></a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-3.jpg" title=""></a>
+			<a class="mgroup2 hide" href="images/gallery/DoE/mobile/doe-4.jpg" title=""></a>
 
-			<a class="mgroup3" href="images/gallery/SLAC/mobile/slac-1.jpg" title="Short caption - this long">Stanford Linear<br>Accelarator Center</a>
-			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-2.jpg" title="Short caption - this long"></a>
-			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-3.jpg" title="Short caption - this long"></a>
-			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-4.jpg" title="Short caption - this long"></a>
+			<a class="mgroup3" href="images/gallery/SLAC/mobile/slac-1.jpg" title="Stanford Linear Accelarator Center">Stanford Linear<br>Accelarator Center</a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-2.jpg" title=""></a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-3.jpg" title=""></a>
+			<a class="mgroup3 hide" href="images/gallery/SLAC/mobile/slac-4.jpg" title=""></a>
 
-			<a class="mvimeo" href="https://player.vimeo.com/video/143400280" title="">The Table in Action</a>
-
+			<a class="mvimeo" href="https://player.vimeo.com/video/143400280" title="The Table in Action">The Table in Action</a>
 
 		</div><!-- /.gallery-item-group -->
 
-
 	</section><!-- /#mobile-table-latest-in-touch -->
-
 
 	<a name="mobile-contact"></a>
 	<section id="mobile-contact">
@@ -616,7 +607,6 @@
 		<span>COPYRIGHT 2015</span>
 
 	</section>
-
 
 </div><!-- end mobile -->
 
