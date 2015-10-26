@@ -343,12 +343,12 @@ video {
 #table #text-block {
   display:block;
   font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:2.25vh;
+  font-size:2.23vh;
   font-weight:lighter;
   font-weight:300;
   margin:0 auto;
   max-width:70%;
-	padding:0;
+	padding:0 13%;
 	position: absolute;
     top:18.5%; right:2%; left:2%;
   text-align:center;
@@ -705,7 +705,6 @@ header > div::before {
 		top:1px;
 }
 
-
 #mobile #tablemenu-mobile  {
 	background-color:#303030;
 	margin-top:-16px;
@@ -719,6 +718,7 @@ header > div::before {
 }
 #mobile #tablemenu-mobile ul li ul li a {
 	padding-left:15%;
+	width: 80%;
 }
 #mobile #tablemenu-mobile ul li a {
 	border-bottom:1px solid #423d3d;
