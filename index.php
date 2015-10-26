@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Newer Multi-touch Table Microsite</title>
+	<title>The Multi-touch Table by Ideum</title>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no minimal-ui">
