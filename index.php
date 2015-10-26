@@ -84,6 +84,7 @@
 
 <div id="desktop-n-tablet">
 
+	<!--
 	<div class="skip_animation">
 		<a id="skip_animation">Skip Animation</a>
 	</div>
@@ -94,6 +95,7 @@
 
 	<video id="video">
 	</video>
+	-->
 
 	<div class="row" id="starting_links">
 
@@ -123,7 +125,7 @@
 		
 	</div>
 
-	<div class="row" id="content-display">
+	<div class="row table" id="content-display">
 
 		<div class="three columns left-side" id="menu">
 			

@@ -351,6 +351,10 @@ function checkSize(){
           document.getElementById("gallery").style.display="block";
           document.getElementById("contact").style.display="none";
 
+          $("#content-display").removeClass('table').css({ "display": "block", "opacity": "0" });
+          $("#content-display").removeClass('contact').css({ "display": "block", "opacity": "0" });
+          $("#content-display").addClass('gallery').css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 3000);
+
         });
 
         $('#section3navitem').click(function(){ // if #section3navitem (Contact) is clicked 
@@ -382,8 +386,12 @@ function checkSize(){
           document.getElementById("table").style.display="none";
           document.getElementById("latest-in-touch").style.display="none";
           document.getElementById("key-features").style.display="none";
-          document.getElementById("gallery").style.display="block";
-          document.getElementById("contact").style.display="none";
+          document.getElementById("gallery").style.display="none";
+          document.getElementById("contact").style.display="block";
+
+          $("#content-display").removeClass('table').css({ "display": "block", "opacity": "0" });
+          $("#content-display").removeClass('gallery').css({ "display": "block", "opacity": "0" });
+          $("#content-display").addClass('contact').css({ "display": "block", "opacity": "0" }).fadeIn({ "opacity": "1" }, 3000);
 
         });
 
@@ -416,11 +424,15 @@ function checkSize(){
 
           $('#dig_deeper').removeClass('on');
 
-          document.getElementById("table").style.display="none";document.getElementById("table").style.display="none";
+          document.getElementById("table").style.display="none";
           document.getElementById("latest-in-touch").style.display="none";
           document.getElementById("key-features").style.display="none";
           document.getElementById("gallery").style.display="block";
           document.getElementById("contact").style.display="none";
+
+          $("#content-display").removeClass('table').css({ "display": "block", "opacity": "0" });
+          $("#content-display").removeClass('contact').css({ "display": "block", "opacity": "0" });
+          $("#content-display").addClass('gallery').css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 3000);
 
         }
 
@@ -456,6 +468,9 @@ function checkSize(){
           document.getElementById("gallery").style.display="none";
           document.getElementById("contact").style.display="block";
 
+          $("#content-display").removeClass('table').css({ "display": "block", "opacity": "0" });
+          $("#content-display").removeClass('gallery').css({ "display": "block", "opacity": "0" });
+          $("#content-display").addClass('contact').css({ "display": "block", "opacity": "0" }).fadeIn({ "opacity": "1" }, 3000);
         }
 
         else { // if scrolled to Multitouch Table
@@ -489,8 +504,12 @@ function checkSize(){
           document.getElementById("key-features").style.display="none";
           document.getElementById("gallery").style.display="none";
           document.getElementById("contact").style.display="none";
+
+          $("#content-display").removeClass('gallery').css({ "display": "block", "opacity": "0" });
+          $("#content-display").removeClass('contact').css({ "display": "block", "opacity": "0" });
+          $("#content-display").addClass('table').css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 3000);
+
         }
-   
 
       }).on("resize", function(){ // if the user resizes the window
          winvh = $(this).height(); // get the new height value
@@ -507,7 +526,6 @@ function checkSize(){
     }
   }
 
-
 $(function() { // scroll to anchor
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -516,7 +534,7 @@ $(function() { // scroll to anchor
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 500);
         return false;
       }
     }
