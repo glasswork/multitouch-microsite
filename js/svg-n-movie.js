@@ -22,76 +22,103 @@ window.onload = function () {
     var c1 = s.circle((window_width/2), (window_height/2), 8).attr({
         fill: 'none',
         stroke: 'white',
-        strokeWidth: 4
+        strokeWidth: 2
     });
 
-    var c2 = c1.clone();
-    var c3 = c1.clone();
-    var c4 = c1.clone();
-    var c5 = c1.clone();
-    var c6 = c1.clone();
-    var c7 = c1.clone();
-    var c8 = c1.clone();
-    var c9 = c1.clone();
-    var c10 = c1.clone();
-    var c11 = c1.clone();
-    var c12 = c1.clone();
+    var hidden_circle = s.circle((window_width/2), (window_height/2), 8).attr({
+        fill: 'none',
+        stroke: 'none',
+        strokeWidth: 2
+    });
 
     c1.animate({
         r: 1000
     }, 6000);
 
     var c2_animate = function () {
+        c2 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c2.animate({
             r: 1000
         }, 6000);
     };
     var c3_animate = function () {
+        c3 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c3.animate({
             r: 1000
         }, 6000);
     };
     var c4_animate = function () {
+        c4 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c4.animate({
             r: 1000
         }, 6000);
     };
     var c5_animate = function () {
+        c5 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c5.animate({
             r: 1000
         }, 6000);
     };
     var c6_animate = function () {
+        c6 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c6.animate({
             r: 1000
         }, 6000);
     };
     var c7_animate = function () {
+        c7 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c7.animate({
             r: 1000
         }, 6000);
     };
     var c8_animate = function () {
+        c8 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c8.animate({
             r: 1000
         }, 6000);
     };
     var c9_animate = function () {
+        c9 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c9.animate({
             r: 1000
         }, 6000);
     };
     var c10_animate = function () {
+        c10 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c10.animate({
             r: 1000
         }, 6000);
     };
     var c11_animate = function () {
+        c11 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c11.animate({
             r: 1000
         }, 6000);
     };
     var c12_animate = function () {
+        c12 = hidden_circle.clone().attr({
+            stroke: 'white'
+        });
         c12.animate({
             r: 1000
         }, 6000);
