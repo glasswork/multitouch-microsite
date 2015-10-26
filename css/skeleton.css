@@ -445,7 +445,7 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-/* Larger than small phone*/
+/* small phone*/
 @media (min-width: 0px) {
 
   #mobile {
@@ -459,6 +459,9 @@ there.
   }
   .header-mobile {
     display:block;
+  }
+  #mobile #mobile-contact table tr td {
+    font-size:11px;
   }
 
 }
@@ -509,6 +512,9 @@ there.
   .navigation-toggle {
     display:none;
   }
+  #mobile #mobile-contact table tr td {
+    font-size:14px;
+  }
 
 }
 
@@ -533,7 +539,7 @@ there.
 /* Larger than medium Tablet - Small Desktop */
 @media (min-width: 900px) {
 
-#table, #latest-in-touch, #key-features {
+  #table, #latest-in-touch, #key-features {
     position: relative;
       left:-15%;
       width: 150%;
@@ -555,6 +561,9 @@ there.
     height:auto;
     width: 46px;
   }
+  #mobile #mobile-contact table tr td {
+    font-size:18px;
+  }
 
 }
 
@@ -569,11 +578,6 @@ there.
     height: auto;
     width: 125px;
   }
-  #table, #latest-in-touch, #key-features {
-    position: relative;
-      left: -25%;
-      width: 150%;
-  }
   #table #text-block {
     max-width: 70%;
   }
@@ -587,6 +591,22 @@ there.
   .columns.right-side, .column.right-side {padding:0 5% 0 0;}
   #starting_links .two.columns.right-side {
     float: right;
+  }
+  #table, #latest-in-touch, #key-features {
+    position: relative;
+      left: -18%;
+    width: 150%;
+  }
+
+}
+
+/* Larger than Large Desktop HD */
+@media (min-width: 1800px) {
+
+  #table, #latest-in-touch, #key-features {
+    position: relative;
+      left: -25%;
+    width: 150%;
   }
 
 }
