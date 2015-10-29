@@ -84,7 +84,7 @@
 
 <div id="desktop-n-tablet">
 
-	<!--
+	<!-- 
 	<div class="skip_animation">
 		<a id="skip_animation">Skip Animation</a>
 	</div>
@@ -111,13 +111,13 @@
 		
 		<div class="three columns right-side" id="utility">
 
-			<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf">
+			<a id="downloadicon" href="http://ideum.com/spec-sheets/Ideum-Specs-Platform.pdf" target="external">
 				<img src="images/download.png" height="64px" width="64px">
 			</a>
 			<a id="socialicon" class="share" href="share.html">
 				<img src="images/share_this.png">
 			</a>
-			<a id="tableicon" href="http://ideum.com/touch-tables/platform/" target="_blank">
+			<a id="tableicon" href="http://ideum.com/touch-tables/platform/" target="external">
 				<img src="images/table_icon.png">
 			</a>
 
@@ -244,7 +244,7 @@
 					</table>
 
 					<p style="text-align: center;">
-						Platforms are sold domestically and internationally.</br>We also rent the Platforms in the US and Canada.
+						Platforms are sold domestically and internationally.</br>We also rent Platforms in the US and Canada.
 					</p>
 
 				</div>
@@ -595,7 +595,7 @@
 		</table>
 
 		<p>
-			Platforms are sold domestically and internationally. We also rent the Platforms in the US and Canada.
+			Platforms are sold domestically and internationally. We also rent Platforms in the US and Canada.
 		</p>
 
 	</section><!-- /#mobile-contact -->
