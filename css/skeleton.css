@@ -153,13 +153,19 @@
     transition:background 0.5s linear;
   }
   #content-display.table {
-    background-image: url('../images/coral-background.png');*
+    background-image: url('../images/coral-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   #content-display.gallery {
-    background-image: url('../images/blue-background.png');*
+    background-image: url('../images/blue-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   #content-display.contact {
-    background-image: url('../images/purple-background.png');*
+    background-image: url('../images/purple-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }
@@ -454,7 +460,7 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-/* small phone*/
+/* smallest phone */
 @media (min-width: 0px) {
 
   #mobile {
@@ -475,18 +481,18 @@ there.
 
 }
 
-/* Larger than small phone*/
+/* small phone larger than smallest phone*/
 @media (min-width: 320px) {
 
 }
 
-/* Larger than Phablet (also point when grid becomes active) */
+/* small tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
  
 }
 
 
-/* Larger than small Tablet */
+/* medium Tablet */
 @media (min-width: 700px) {
 
   .columns.left-side, .column.left-side {
@@ -527,7 +533,7 @@ there.
 
 }
 
-/* Smaller than Desktop */
+/* small desktop */
 @media (max-width: 900px) {
 
   #table, #latest-in-touch, #key-features {
@@ -545,7 +551,7 @@ there.
 
 }
 
-/* Larger than medium Tablet - Small Desktop */
+/* medium desktop */
 @media (min-width: 900px) {
 
   #table, #latest-in-touch, #key-features {
@@ -576,7 +582,7 @@ there.
 
 }
 
-/* Larger than Desktop */
+/* large desktop */
 @media (min-width: 1200px) {
 
   #utility a img {
@@ -593,7 +599,7 @@ there.
   
 }
 
-/* Larger than Desktop HD */
+/* HD - larger than desktop */
 @media (min-width: 1400px) {
 
   .columns.left-side, .column.left-side {padding:0 0 0 5%;}
@@ -609,7 +615,7 @@ there.
 
 }
 
-/* Larger than Large Desktop HD */
+/* larger than HD desktop */
 @media (min-width: 1800px) {
 
   #table, #latest-in-touch, #key-features {
