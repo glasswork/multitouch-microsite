@@ -13,7 +13,7 @@ $(document).ready(function() {
 function checkSize(){
   if ($("#mobile").css("display") == "none" ){ // begin scripts that only fire when not in 'mobile' mode (above 700px width)
 
-    if(window.location.href.substr(-2) == "?m") { // if we were in mobile display mode, remove the indicator
+    if(window.location.href.substr(-2) != "?d") { // if we were in mobile display mode, remove the indicator
       window.location = window.location.href = "?d"; // and add the desktop display mode indicator
     }
 
@@ -513,6 +513,7 @@ function checkSize(){
 
       }).on("resize", function(){ // if the user resizes the window
          winvh = $(this).height(); // get the new height value
+         window.location = window.location.href = "";
       }); 
 
       
