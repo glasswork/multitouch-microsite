@@ -595,7 +595,7 @@
 		</table>
 
 		<p>
-			Platforms are sold domestically and internationally. We also rent Platforms in the US.
+			Platforms are sold domestically and internationally. We also <a href="http://multitouchrentals.com">rent Platforms</a> in the US.
 		</p>
 
 	</section><!-- /#mobile-contact -->
