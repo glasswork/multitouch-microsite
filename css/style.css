@@ -8,7 +8,7 @@ html, body {
 	padding:0; 
 	position:relative;
 	width: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #downloadicon, #ideumicon, #socialicon, #tableicon {
@@ -667,7 +667,15 @@ header > div::before {
 	text-align:center;
 	width:76%;
 }
-	
+
+#mobile #mobile-contact p a {
+	color: #fff;
+}
+
+#mobile #mobile-contact p a:hover {
+	font-weight: 400;
+}
+
 #mobile	.navigation-toggle {
 	height:62px;
 	padding:1em;

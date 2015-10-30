@@ -244,7 +244,7 @@
 					</table>
 
 					<p style="text-align: center;">
-						Platforms are sold domestically and internationally.</br>We also rent Platforms in the US and Canada.
+						Platforms are sold domestically and internationally.</br>We also <a href="http://multitouchrentals.com">rent Platforms</a> in the US and Canada.
 					</p>
 
 				</div>
