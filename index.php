@@ -561,7 +561,7 @@
 					<img id="nm_phone_nmbr" src="images/nm_nbr.png"/>
 				</td>
 				<td class="text-column">
-					(505) 702-1110 ext.1
+					(505) 792-1110 ext.1
 				</td>
 			</tr>
 			<tr class="contact-element">
@@ -595,7 +595,7 @@
 		</table>
 
 		<p>
-			Platforms are sold domestically and internationally. We also rent Platforms in the US and Canada.
+			Platforms are sold domestically and internationally. We also rent Platforms in the US.
 		</p>
 
 	</section><!-- /#mobile-contact -->
