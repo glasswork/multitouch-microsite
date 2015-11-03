@@ -392,12 +392,23 @@ video {
 	word-spacing:.5vmax;
 	text-align:center
 }
+#contact p, #contact-table .text-column {
+	color:#fff;
+	font-weight: 300;
+}
 #contact p a {
 	color:#fff;
-	text-decoration:underline;
+	font-weight: 300;
+	text-decoration: underline;
 }
-#contact-table .text-column a{
+#contact p a:hover {
 	color:#fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+#contact-table .text-column a {
+	color:#fff;
+	font-weight: 300;
 	text-decoration:none;
 }
 #contact-table .text-column a:hover {
@@ -409,6 +420,7 @@ video {
 }
 #contact table#contact-table td {
 	border-bottom: 0px solid #E1E1E1;
+	font-weight: 300;
 	padding: 6px 15px;
 }
 
