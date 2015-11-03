@@ -223,22 +223,22 @@
 						</tr>
 						<tr class="contact-element">
 							<td class="icon-column">
-								<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
-									<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+								<a id="web-icon-link" href="http://www.ideum.com/contact/" target="_blank">
+									<img id="web-icon" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
 								</a>
 							</td>
 							<td class="text-column">
-								<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
+								<a onmouseover="showInquiry()" onmouseout="hideInquiry()" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
 							</td>
 						</tr>
 						<tr class="contact-element">
 							<td class="icon-column">
-								<a id="sales" href="mailto:sales@ideum.com" target="_blank">
-									<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+								<a id="email-icon-link" href="mailto:sales@ideum.com" target="_blank">
+									<img id="email-icon" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
 								</a>
 							</td>
 							<td class="text-column">
-								<a id="sales" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
+								<a onmouseover="showSales()" onmouseout="hideSales()" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
 							</td>
 						</tr>
 					</table>
@@ -574,22 +574,22 @@
 			</tr>
 			<tr class="contact-element">
 				<td class="icon-column">
-					<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">
-						<img src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
+					<a id="web-icon-link" href="http://www.ideum.com/contact/" target="_blank">
+						<img id="web-icon-m" src="images/web_default.png" onmouseover="this.src='images/web_selected.png'" onmouseout="this.src='images/web_default.png'"/>
 					</a>
 				</td>
 				<td class="text-column">
-					<a id="inquiry" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
+					<a id="web-link" onmouseover="showInquiry()" onmouseout="hideInquiry()" href="http://www.ideum.com/contact/" target="_blank">online inquiry form</a>
 				</td>
 			</tr>
 			<tr class="contact-element">
 				<td class="icon-column">
-					<a id="sales" href="mailto:sales@ideum.com" target="_blank">
-						<img src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
+					<a id="email-icon-link" href="mailto:sales@ideum.com" target="_blank">
+						<img id="email-icon-m" src="images/email_default.png" onmouseover="this.src='images/email_selected.png'" onmouseout="this.src='images/email_default.png'"/>
 					</a>
 				</td>
 				<td class="text-column">
-					<a id="sales" href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
+					<a onmouseover="showSales()" onmouseout="hideSales()"  href="mailto:sales@ideum.com" target="_blank">sales@ideum.com</a>
 				</td>
 			</tr>
 		</table>

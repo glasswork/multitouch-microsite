@@ -515,7 +515,6 @@ function checkSize(){
          winvh = $(this).height(); // get the new height value
          window.location = window.location.href = "";
       }); 
-
       
     });
 
@@ -527,21 +526,37 @@ function checkSize(){
     }
   }
 
-$(function() { // scroll to anchor
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
+  $(function() { // scroll to anchor
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 500);
+          return false;
+        }
       }
-    }
+    });
   });
-});
-
-
 
 }
+
+function showSales(){ // if email text link hovered then switch email-icon from default to selected
+  document.getElementById('email-icon').src='images/email_selected.png';
+  document.getElementById('email-icon-m').src='images/email_selected.png';
+} 
+function hideSales(){ // on mouseout switch email icon back
+  document.getElementById('email-icon').src='images/email_default.png';
+  document.getElementById('email-icon-m').src='images/email_default.png';
+} 
+
+function showInquiry(){ // if web text link hovered then switch web-icon from default to selected
+  document.getElementById('web-icon').src='images/web_selected.png';
+  document.getElementById('web-icon-m').src='images/web_selected.png';
+} 
+function hideInquiry(){ // on mouseout switch web icon back
+  document.getElementById('web-icon').src='images/web_default.png';
+  document.getElementById('web-icon-m').src='images/web_default.png';
+} 
